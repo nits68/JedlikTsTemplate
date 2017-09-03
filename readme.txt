@@ -59,17 +59,15 @@ C.  Fejlesztés, tesztelés, kilépés
 5.  Futtatás: Chrome: http://localhost:8080/
     Nyomkövetés indítása: F5 (elhelyezett törépontoknál megáll)
 6.  goto 4.pont :-)
-7.  Kilépéskora futó taskok "kilövése" a kuka ikonnal,
+7.  Kilépéskora futó task-ok "kilövése" a kuka ikonnal,
 
 Hasznos linkek:
 ===============
-http://www.phaser.io/
-https://github.com/photonstorm/phaser
-https://photonstorm.github.io/phaser-ce/
-http://www.html5gamedevs.com/forum/14-phaser/
-http://pgl.ilinov.eu/
-https://git-scm.com/book/en/v2
+https://www.typescriptlang.org/docs/home.html
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+https://git-scm.com/book/en/v2
+
+http://pgl.ilinov.eu/
 https://fonts.google.com/
 
 Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
