@@ -1,0 +1,117 @@
+var Versenyző = (function () {
+    function Versenyző(sor) {
+        var m = sor.split(" ");
+        this.vk = m[0];
+        this.vv = m[1];
+    }
+    Versenyző.prototype.HelyesenVálaszolt = function (index) {
+        if (this.vv[index] === undefined)
+            return false;
+        return Versenyző.helyesMegoldás[index] === this.vv[index];
+    };
+    Versenyző.prototype.VálaszMinta = function () {
+        var minta = "";
+        for (var i = 0; i < this.vv.length; i++) {
+            minta += this.HelyesenVálaszolt(i) ? "+" : " ";
+        }
+        return minta;
+    };
+    Versenyző.prototype.Pontszám = function () {
+        var szum = 0;
+        var pontok = [3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 6];
+        for (var i = 0; i < this.vv.length; i++) {
+            if (this.HelyesenVálaszolt(i))
+                szum += pontok[i];
+        }
+        return szum;
+    };
+    Versenyző.helyesMegoldás = ""; // minden pédányban közös mező
+    return Versenyző;
+}());
+var Program = (function () {
+    function Program() {
+        var server = require("http").createServer(this.Content);
+        server.listen(8080);
+    }
+    Program.prototype.Content = function (req, res) {
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+        res.write("<form style='font-size:16px; background: LightGray'>");
+        res.write("<pre style='font-family: Courier'>");
+        res.write("<p>1. feladat: Az adatok beolvasása</p>");
+        // input:
+        var query = require("url").parse(req.url, true).query;
+        var vazon = "AB123"; // alapértelmezett versenyző
+        var sorszam = "10"; // alapértelmezett feladat
+        if (query.vazon !== undefined) {
+            vazon = query.vazon;
+        }
+        if (query.sorszam !== undefined) {
+            sorszam = query.sorszam;
+        }
+        var v = [];
+        var fs = require("fs"); // fájlkezeléshez (node.js)
+        var sorok = fs.readFileSync("valaszok.txt").toString().split("\r\n");
+        Versenyző.helyesMegoldás = sorok[0];
+        for (var i = 1; i < sorok.length; i++) {
+            if (sorok[i].length > 0)
+                v.push(new Versenyző(sorok[i]));
+        }
+        res.write("<p>2. feladat: A vetélkedőn " + v.length + " versenyző indult.</p>");
+        res.write("<p>3. feladat: A versenyző azonosítója = " +
+            "<input type='text' name='vazon' style='font-family:Courier; font-size: inherit; " +
+            "background:LightGray; border: none' value='" + vazon + "'><br />");
+        var tmp;
+        for (var i = 0; i < v.length; i++) {
+            if (v[i].vk === vazon) {
+                tmp = v[i];
+                break;
+            }
+        }
+        if (tmp === undefined) {
+            res.end();
+            return;
+        } // ha nincs a megadott versenyző, akkor kilép
+        res.write(tmp.vv + " (a versenyző válasza)</p>");
+        res.write("<p>4. feladat:<br />");
+        res.write(Versenyző.helyesMegoldás + " (a helyes megoldás)<br />");
+        res.write(tmp.VálaszMinta() + " (a versenyző helyes válaszai)</p>");
+        if (parseInt(sorszam) === undefined) {
+            res.end();
+            return; // ha a "sorszam" paraméter nem szám, akkor kilép
+        }
+        res.write("<p>5. feladat: A feladat sorszáma = " +
+            "<input type='text' name='sorszam' style='font-family:Courier; font-size: inherit; " +
+            "background:LightGray; border: none' value='" + sorszam + "'><br />");
+        var dbHelyes = 0;
+        v.forEach(function (i) {
+            if (i.HelyesenVálaszolt(parseInt(sorszam) - 1))
+                dbHelyes++;
+        });
+        res.write("A feladatra " + dbHelyes + " fő, a versenyzők " +
+            (dbHelyes / v.length * 100).toFixed(2) + "%-a adott helyes választ.</p>");
+        res.write("<p>6. feladat: A versenyzők pontszámának meghatározása</p>");
+        var ws = fs.createWriteStream("pontok.txt"); // noed.js - szövges file írása
+        v.forEach(function (i) {
+            ws.write(i.vk + " " + i.Pontszám() + "\n");
+        });
+        ws.end();
+        res.write("<p>7. feladat:  A verseny legjobbjai:<br />");
+        v.sort(function (a, b) { return b.Pontszám() - a.Pontszám(); });
+        var díj = 0;
+        var pontElőző = -1;
+        for (var i = 0; i < v.length; i++) {
+            if (pontElőző !== v[i].Pontszám()) {
+                díj++;
+                if (díj === 4)
+                    break;
+            }
+            res.write(díj + ".díj (" + v[i].Pontszám() + "pont): " + v[i].vk + "<br />");
+            pontElőző = v[i].Pontszám();
+        }
+        res.write("</p><input type='submit' value='Frissítés'></pre></form>");
+        res.end();
+    };
+    return Program;
+}());
+new Program();
+//# sourceMappingURL=app.js.map
