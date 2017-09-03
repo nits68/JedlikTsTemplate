@@ -58,7 +58,7 @@ C.  Fejlesztés, tesztelés, kilépés
 4.  app.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/
     Nyomkövetés indítása: F5 -el (elhelyezett töréspontoknál megáll)
-6.  goto 3.pont :-)
+6.  goto 4.pont :-)
 7.  Kilépéskora futó task-ok "kilövése" a kuka ikonnal,
     a TERMINAL (Ctrl-ö) ablakban
 
