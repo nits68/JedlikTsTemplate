@@ -49,7 +49,7 @@ C.  Fejlesztés, tesztelés, kilépés
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy
     Project mappa helyi menüből: Open with Code, vagy
     VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
-2.  Ctrl-Shift-B => TypeScript források átalakítása JavaScript-re (app.ts => app.js)
+2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re (app.ts => app.js)
     (watch üzemmód, az első fordítás után már autómatikus a fordítás)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => nodemon indítása
@@ -57,18 +57,18 @@ C.  Fejlesztés, tesztelés, kilépés
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  app.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/
-    Nyomkövetés indítása: F5 (elhelyezett törépontoknál megáll)
-6.  goto 4.pont :-)
+    Nyomkövetés indítása: F5 -el (elhelyezett töréspontoknál megáll)
+6.  goto 3.pont :-)
 7.  Kilépéskora futó task-ok "kilövése" a kuka ikonnal,
+    a TERMINAL (Ctrl-ö) ablakban
+
 
 Hasznos linkek:
 ===============
 https://www.typescriptlang.org/docs/home.html
+https://code.visualstudio.com/docs
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://git-scm.com/book/en/v2
-
-http://pgl.ilinov.eu/
-https://fonts.google.com/
 
 Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 ===========================================================
@@ -92,14 +92,12 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 8. Változások szinkronizálása ("feltöltés")
    Alul a státus sorban balra "Synchronize Changes" -ra kattínt
 
-   
 Verziók lekérdezése terminálablakból:
 =====================================
 TypeScript: tsc -v
 Node.js: node -v
 git: git --version
 npm: npm -v
-Phaser: npm v phaser-ce
 
 VS Code editor beállítása:
 ==========================
