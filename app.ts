@@ -3,8 +3,7 @@
     class Program {
 
         constructor() {
-            const server: any = require("http").createServer(this.Content);
-            server.listen(8080);
+            require("http").createServer(this.Content).listen(8080);
         }
 
         Content(req: any, res: any): void {

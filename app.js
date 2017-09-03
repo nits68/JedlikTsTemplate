@@ -2,8 +2,7 @@ var MyApp;
 (function (MyApp) {
     var Program = (function () {
         function Program() {
-            var server = require("http").createServer(this.Content);
-            server.listen(8080);
+            require("http").createServer(this.Content).listen(8080);
         }
         Program.prototype.Content = function (req, res) {
             res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
