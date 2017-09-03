@@ -8,7 +8,8 @@
     },
     "scripts": {
       "install:nodemodules": "npm install",
-      "run:nodemon": "nodemon --debug app.js"
+      "compile": "tsc",
+      "nodemon": "nodemon --debug app.js"
     },
     "author": "Nits László",
     "license": "MIT",

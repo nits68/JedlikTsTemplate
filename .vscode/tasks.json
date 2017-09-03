@@ -4,21 +4,18 @@
    "version": "2.0.0",
    "tasks": [
       {
-         "type": "typescript",
-         "tsconfig": "tsconfig.json",
-         "problemMatcher": [
-            "$tsc"
-         ],
+         "type": "npm",
+         "script": "nodemon",
          "group": {
-            "kind": "build",
+            "kind": "test",
             "isDefault": true
          }
       },
       {
          "type": "npm",
-         "script": "run:nodemon",
+         "script": "compile",
          "group": {
-            "kind": "test",
+            "kind": "build",
             "isDefault": true
          }
       }
