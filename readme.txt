@@ -85,7 +85,10 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
 6. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
-   A fájl tartalma: node_modules
+   A fájl tartalma:
+   node_modules
+   app.js
+   app.js.map
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
 7. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
