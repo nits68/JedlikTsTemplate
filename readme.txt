@@ -77,7 +77,7 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    (nitslaszlo az account név a példában)
 2. Git repository létrehozása:
    pl.: GitHub asztali alkalmazással vagy github.com-on
-   (JedlikTsPhaserTemplate a repository neve a példában)
+   (JedlikTsTemplate a repository neve a példában)
 3. Visual Studio Code indítása - project betöltése
 4. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
    majd "Initialize Repository"-ra kattint (felül)
