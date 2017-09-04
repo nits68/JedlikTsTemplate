@@ -1,5 +1,5 @@
-VS Code + TypeScript + Node.js
-===============================
+VS Code + TypeScript + Node.js + Git
+====================================
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
 1.  Node.js letöltése, telepítése:
