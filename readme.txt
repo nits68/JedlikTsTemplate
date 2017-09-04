@@ -1,11 +1,10 @@
 VS Code + TypeScript + Node.js + Git
-====================================
+======================================
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
 1.  Node.js letöltése, telepítése:
     https://nodejs.org/en/download/
-2.  Node.js command prompt, Node.js beállítása, globális Node.js csomagok telepítése:
-    "npm config set package-lock false"
+2.  Node.js command prompt, globális Node.js csomagok telepítése:
     "npm install -g typescript"
     "npm install -g tslint"
     "npm install -g nodemon"
@@ -18,12 +17,14 @@ A.  Fejlesztői környezet telepítése, beállítása
     Kiterjesztés keresése, telepítés:
      - Debugger for Chrome
      - TSLint
+     - vscode-pfd
      (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: 
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
-    Hozzárendelés, módosítás: "ceruza" ikonra kattíntással
+    Hozzárendelés, módosítás: "ceruza" ikonra kattíntással, törlés: Del bill.
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
+    - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del)
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
 7. Opcionális: VSCode beállítása: lsd. az oldal végén
@@ -33,13 +34,13 @@ B.  Projekt előkészítése (inicializálása)
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git
     JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába
     Ha GitHub-on meglévő projektet akarunk git-el másik gépen vagy csoport tagjaként fejleszteni
-    Parancssor  -> cd a projekt szülőmappája ->
+    Parancssor  -> cd a projekt szülőmappája >
     "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"
 2.  JedlikTsTemplate-master mappa átnevezése tetszőlegesen, ha új projektet készítünk
     Klónozott vagy átnevezett mappa helyi menüből: Open with Code,
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
-    Node.js lokális modul telepítése:
+    Node.js lokális modul(ok) telepítése:
     terminál ablakból "npm install" parancs futtatása
     (@types/node modult telepíti, lsd.: package.json)
 
@@ -56,10 +57,13 @@ C.  Fejlesztés, tesztelés, kilépés
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  app.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/
-    Nyomkövetés indítása: F5 -el (elhelyezett töréspontoknál megáll)
+    Nyomkövetés (beépített debugger és Chrome összekapcsolása):
+    F5 -el (elhelyezett töréspontoknál megáll)
 6.  goto 4.pont :-)
 7.  Kilépéskora futó task-ok "kilövése" a kuka ikonnal,
     a TERMINAL (Ctrl-ö) ablakban
+    Hibás működés gyakori oka a háttérben futó Node taskok,
+    ezeket ki kell "lőni" feladatkezelővel
 
 
 Hasznos linkek:
@@ -77,17 +81,16 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 2. Git repository létrehozása:
    pl.: GitHub asztali alkalmazással vagy github.com-on
    (JedlikTsTemplate a repository neve a példában)
-3. Visual Studio Code indítása - project betöltése
-   git config --global user.name nitslaszlo@gmail.com (jelszót kér)
+3. Git konfigurálása Git CMD ablakból:
+   git config --global user.name nitslaszlo@gmail.com
    git config --global credential.helper wincred
-   új repo
-   meglévő repo git push -u origin –all
-4. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
+4. Visual Studio Code indítása - project betöltése
+5. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
    majd "Initialize Repository"-ra kattint (felül)
-5. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
+6. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
    "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
-
-6. ".gitignore" fájl létrehozása (opcionális):
+   Ha már létező repo, akkor le kell húzni: "repo git push -u origin –all"
+7. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma:
    node_modules
@@ -95,8 +98,8 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    app.js.map
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
-7. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
-8. Változások szinkronizálása ("feltöltés")
+8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
+9. Változások szinkronizálása ("feltöltés")
    Alul a státus sorban balra "Synchronize Changes" -ra kattínt
 
 Verziók lekérdezése terminálablakból:
