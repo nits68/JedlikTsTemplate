@@ -1,5 +1,5 @@
 VS Code + TypeScript + Node.js
-============================ ==
+===============================
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
 1.  Node.js letöltése, telepítése:
@@ -7,7 +7,6 @@ A.  Fejlesztői környezet telepítése, beállítása
 2.  Node.js command prompt, Node.js beállítása, globális Node.js csomagok telepítése:
     "npm config set package-lock false"
     "npm install -g typescript"
-    "npm install -g typings"
     "npm install -g tslint"
     "npm install -g nodemon"
     parancsokkal
@@ -32,13 +31,12 @@ A.  Fejlesztői környezet telepítése, beállítása
 B.  Projekt előkészítése (inicializálása)
 =========================================
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git
-    JedlikTsTemplate-master.zip letöltése, kicsomagolása
-    vagy:
-    CMD ablak
-    "cd projekt_szülőmappa"
+    JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába
+    Ha GitHub-on meglévő projektet akarunk git-el másik gépen vagy csoport tagjaként fejleszteni
+    Parancssor  -> cd a projekt szülőmappája ->
     "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"
-2.  JedlikTsTemplate-master mappa átnevezése tetszőlegesen
-    Átnevezett mappa helyi menüből: Open with Code,
+2.  JedlikTsTemplate-master mappa átnevezése tetszőlegesen, ha új projektet készítünk
+    Klónozott vagy átnevezett mappa helyi menüből: Open with Code,
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
     Node.js lokális modul telepítése:
