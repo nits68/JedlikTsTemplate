@@ -6,7 +6,7 @@
             "type": "node",
             "request": "attach",
             "restart": true,
-            "port": 5858
+            "port": 9229
         }
     ]
 }

@@ -4,7 +4,8 @@ A.  Fejlesztői környezet telepítése, beállítása
 ================================================
 1.  Node.js letöltése, telepítése:
     https://nodejs.org/en/download/
-2.  Node.js command prompt, globális Node.js csomagok telepítése:
+2.  Node.js command prompt, Node.js beállítása, globális Node.js csomagok telepítése:
+    "npm config set package-lock false"
     "npm install -g typescript"
     "npm install -g typings"
     "npm install -g tslint"
@@ -79,10 +80,14 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    pl.: GitHub asztali alkalmazással vagy github.com-on
    (JedlikTsTemplate a repository neve a példában)
 3. Visual Studio Code indítása - project betöltése
+   git config --global user.name nitslaszlo@gmail.com (jelszót kér)
+   új repo
+   meglévő repo git push -u origin –all
 4. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
    majd "Initialize Repository"-ra kattint (felül)
 5. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
    "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
+
 6. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma:
