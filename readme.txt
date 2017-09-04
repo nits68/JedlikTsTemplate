@@ -1,4 +1,4 @@
-VS Code + TypeScript + Node.js + Git
+VS Code + TypeScript + Node.js + Git2
 ======================================
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
