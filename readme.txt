@@ -32,8 +32,9 @@ A.  Fejlesztői környezet telepítése, beállítása
 B.  Projekt előkészítése (inicializálása)
 =========================================
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git
+    Új project esetén:
     JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába
-    Ha GitHub-on meglévő projektet akarunk git-el másik gépen vagy csoport tagjaként fejleszteni
+    Ha GitHub-on meglévő projektet akarunk git-el másik gépen vagy csoport tagjaként fejleszteni:
     Parancssor  -> cd a projekt szülőmappája >
     "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"
 2.  JedlikTsTemplate-master mappa átnevezése tetszőlegesen, ha új projektet készítünk
@@ -61,9 +62,9 @@ C.  Fejlesztés, tesztelés, kilépés
     F5 -el (elhelyezett töréspontoknál megáll)
 6.  goto 4.pont :-)
 7.  Kilépéskora futó task-ok "kilövése" a kuka ikonnal,
-    a TERMINAL (Ctrl-ö) ablakban
-    Hibás működés gyakori oka a háttérben futó Node taskok,
-    ezeket ki kell "lőni" feladatkezelővel
+    a TERMINAL (Ctrl-ö) ablakban!!!
+    Hibás működés gyakori oka a háttérben futó Node.js taskok,
+    ezeket ki kell "lőni" a feladatkezelővel!
 
 
 Hasznos linkek:
@@ -89,7 +90,6 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    majd "Initialize Repository"-ra kattint (felül)
 6. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
    "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
-   Ha már létező repo, akkor le kell húzni: "repo git push -u origin –all"
 7. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma:
