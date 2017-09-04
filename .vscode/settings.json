@@ -19,6 +19,7 @@
         "**/.gitignore": true,
         "**/node_modules": true,
         "**/*.js": true,
-        "**/*.js.map": true
+        "**/*.js.map": true,
+        "**/*.npmrc": true
       }
 }

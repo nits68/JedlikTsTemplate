@@ -49,10 +49,10 @@ C.  Fejlesztés, tesztelés, kilépés
     Project mappa helyi menüből: Open with Code, vagy
     VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re (app.ts => app.js)
-    (watch üzemmód, az első fordítás után már autómatikus a fordítás)
+    (watch üzemmód, az első fordítás után már automatikus a fordítás)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => nodemon indítása
-    (változásnál újratölti az app.js-t autómatikusan)
+    (változásnál újratölti az app.js-t automatikusan)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  app.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/
@@ -79,6 +79,7 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    (JedlikTsTemplate a repository neve a példában)
 3. Visual Studio Code indítása - project betöltése
    git config --global user.name nitslaszlo@gmail.com (jelszót kér)
+   git config --global credential.helper wincred
    új repo
    meglévő repo git push -u origin –all
 4. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
