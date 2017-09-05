@@ -7,7 +7,7 @@
         }
 
         Content(req: any, res: any): void {
-            res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+            res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });   
             res.write("<html><head><title>MyApp</title></head>");
             res.write("<body><pre style='font-family: Courier';>");
 
