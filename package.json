@@ -1,19 +1,19 @@
 {
-    "name": "jedlik-typescript-vscode-template",
-    "version": "1.0.0",
-    "description": "Jedlik project template for using TypeScript and Node.js in VS Code.",
-    "main": "",
-    "repository": {
-      "private": true
-    },
-    "scripts": {
-      "install:nodemodules": "npm install",
-      "compile": "tsc",
-      "nodemon": "nodemon --inspect app.js"
-    },
-    "author": "Nits László",
-    "license": "MIT",
-    "devDependencies": {
-      "@types/node": "^8.0.26"
-    }
+  "name": "jedlik-typescript-vscode-template",
+  "version": "1.0.0",
+  "description": "Jedlik project template for using TypeScript and Node.js in VS Code.",
+  "main": "",
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "install:nodemodules": "npm install",
+    "compile": "tsc",
+    "nodemon": "nodemon --inspect app.js"
+  },
+  "author": "Nits László",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.26"
   }
+}
