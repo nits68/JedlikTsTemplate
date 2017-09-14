@@ -1,6 +1,6 @@
 ﻿import * as http from "http";
-import * as url from "url";
-import * as fs from "fs";
+import * as url from "url"; // űrlapokhoz, input kiolvasás
+import * as fs from "fs"; // file-kezelés
 
 export class Content {
 

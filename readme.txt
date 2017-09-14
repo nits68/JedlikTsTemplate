@@ -56,9 +56,7 @@ C.  Fejlesztés, tesztelés, kilépés
 3.  Ctrl-Shift-T => nodemon indítása
     (változásnál újratölti az app.js-t automatikusan)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
-4.  content.ts, myClass.ts szerkesztése
-    (új fájlok (osztályok) létrehozásakor vagy átnevezés esetén
-    szerkeszteni kell a tsconfig.json állományt (fontos a sorrend!!!))
+4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):
     F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
