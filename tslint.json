@@ -12,7 +12,7 @@
         ],
         "jsdoc-format": true,
         "linebreak-style": [true, "CRLF"],
-        "max-line-length": [true, 80],
+        "max-line-length": [true, 90],
         "next-line": [true,
             "check-catch",
             "check-else"

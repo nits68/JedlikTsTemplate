@@ -56,7 +56,9 @@ C.  Fejlesztés, tesztelés, kilépés
 3.  Ctrl-Shift-T => nodemon indítása
     (változásnál újratölti az app.js-t automatikusan)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
-4.  app.ts szerkesztése
+4.  content.ts, myClass.ts szerkesztése
+    (új fájlok (osztályok) létrehozásakor vagy átnevezés esetén
+    szerkeszteni kell a tsconfig.json állományt (fontos a sorrend!!!))
 5.  Futtatás: Chrome: http://localhost:8080/
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):
     F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
@@ -70,6 +72,7 @@ C.  Fejlesztés, tesztelés, kilépés
 Hasznos linkek:
 ===============
 https://www.typescriptlang.org/docs/home.html
+https://www.typescriptlang.org/docs/handbook/basic-types.html
 https://code.visualstudio.com/docs
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://git-scm.com/book/en/v2
@@ -94,8 +97,7 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma:
    node_modules
-   app.js
-   app.js.map
+   js
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
 8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el

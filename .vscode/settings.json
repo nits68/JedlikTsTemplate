@@ -13,12 +13,12 @@
     "files.autoSaveDelay": 1000,
     "files.encoding": "utf8",
     "files.eol": "\r\n",
+    "editor.minimap.enabled": false,
 
     "files.exclude": {
         "**/.git": true,
         "**/.gitignore": true,
         "**/node_modules": true,
-        "**/*.js": true,
         "**/*.js.map": true,
         "**/*.npmrc": true
       }

@@ -1,8 +1,16 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "module": "commonjs",
         "sourceMap": true,
-        "watch": true
-    }
+        "watch": true,
+        "outDir": "./js"
+    },
+    "include": [
+        "ts/**/*"
+    ],
+    "exclude": [
+        "node_modules/**/*",
+        "**/node_modules/*"
+    ]
 }

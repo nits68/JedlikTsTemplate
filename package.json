@@ -9,7 +9,7 @@
     "scripts": {
       "install:nodemodules": "npm install",
       "compile": "tsc",
-      "nodemon": "nodemon --inspect app.js"
+      "nodemon": "nodemon --inspect ./js/app.js"
     },
     "author": "Nits László",
     "license": "MIT",
