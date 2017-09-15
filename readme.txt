@@ -96,6 +96,7 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    A fájl tartalma:
    node_modules
    js
+   npm-debug.log
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
 8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
