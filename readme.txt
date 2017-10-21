@@ -1,5 +1,7 @@
-VS Code + TypeScript + Node.js + Git
-=====================================
+VS Code + TypeScript + Node.js + Git + Heroku
+==============================================
+Projekt tesztlése:
+
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
 1.  Node.js letöltése, telepítése:
@@ -74,6 +76,7 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 https://code.visualstudio.com/docs
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://git-scm.com/book/en/v2
+https://heroku.com
 
 Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 ===========================================================
@@ -117,4 +120,4 @@ VS Code editor beállítása:
 3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy
    Preferences: "Open User Settings" a felasználónált tárolt beállításokhoz
    Konfig fájl workspace: projekt/.vscode/settings.json
-   Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json 
+   Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json
