@@ -8,7 +8,6 @@ export class Content {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.write("<p>Hello TypeScript!</p>");
 
-
         res.end();
     }
 }
