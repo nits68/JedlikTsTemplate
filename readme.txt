@@ -1,6 +1,7 @@
 VS Code + TypeScript + Node.js + Git + Heroku
 ==============================================
-Projekt tesztlése:
+
+Teszt: https://ts-jedlik-template.herokuapp.com/
 
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
