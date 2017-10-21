@@ -7,6 +7,7 @@
       "private": true
     },
     "scripts": {
+      "start": "node --debug=5858 ./js/app.js",
       "install:nodemodules": "npm install",
       "compile": "tsc",
       "nodemon": "nodemon --inspect ./js/app.js"
