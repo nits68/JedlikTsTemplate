@@ -12,7 +12,7 @@ A.  Fejlesztői környezet telepítése, beállítása
     "npm install -g tslint"
     "npm install -g nodemon"
     parancsokkal
-    Keresési útvonal (path) bővítése ha a parancssorból (CMD.EXE) kiadott "tsc" parancs nem található: 
+    Keresési útvonal (path) bővítése, ha a parancssorból (CMD.EXE) kiadott "tsc" parancs nem található: 
       1. Vezérlőpult/Rendszer/Speciális rendszerbeállítások/Speciális fül/Környezeti változók/Path/Új...
       2. "%APPDATA%\npm" hozzáadása (idézőjelek nélkül)
 3.  Git for windows telepítése (opcionális, git-hez):
