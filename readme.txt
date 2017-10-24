@@ -73,6 +73,7 @@ C.  Fejlesztés, tesztelés, kilépés
 Hasznos linkek:
 ===============
 https://www.typescriptlang.org/docs/home.html
+https://www.tutorialspoint.com/typescript/
 https://www.typescriptlang.org/docs/handbook/basic-types.html
 https://code.visualstudio.com/docs
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
