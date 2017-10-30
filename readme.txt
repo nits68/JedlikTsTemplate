@@ -70,9 +70,22 @@ C.  Fejlesztés, tesztelés, kilépés
     Hibás működés gyakori oka a háttérben futó Node.js taskok,
     ezeket ki kell "lőni" a feladatkezelővel!
 
+D. Verziók lekérdezése terminálablakból:
+=========================================
+TypeScript: tsc -v
+Node.js: node -v
+git: git --version
+npm: npm -v
 
-Hasznos linkek:
-===============
+E. Komponensek frissítése
+==========================
+VSCode: Automatikus, balra lent a fogaskeréken jelzi, ha új verzió jön ki
+VSCode kiterjesztések: Automatikus, balra az Extensions ikon jelzi, ha új verzió jön ki
+TypeScript: npm update -g typescript
+Node.js: npm install --save-dev @types/node
+
+F. Hasznos linkek:
+===================
 https://www.typescriptlang.org/docs/home.html
 https://www.tutorialspoint.com/typescript/
 https://www.typescriptlang.org/docs/handbook/basic-types.html
@@ -81,8 +94,8 @@ https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://git-scm.com/book/en/v2
 https://heroku.com
 
-Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
-===========================================================
+G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
+==============================================================
 1. Github account létrehozása:
    https://github.com/
    (nitslaszlo az account név a példában)
@@ -108,15 +121,10 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 9. Változások szinkronizálása ("feltöltés")
    Alul a státus sorban balra "Synchronize Changes" -ra kattínt
 
-Verziók lekérdezése terminálablakból:
-=====================================
-TypeScript: tsc -v
-Node.js: node -v
-git: git --version
-npm: npm -v
 
-VS Code editor beállítása:
-==========================
+
+H. VS Code editor beállítása:
+==============================
 1. Ctrl-Shift-P vagy F1
 2. "Preferen..." gépelése
 3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy
