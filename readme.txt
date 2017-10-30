@@ -111,6 +111,7 @@ G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    majd "Initialize Repository"-ra kattint (felül)
 6. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
    "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
+   "git push -u origin master"
 7. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma:
