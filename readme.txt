@@ -1,5 +1,6 @@
-VS Code + TypeScript + Node.js + Git + Heroku
-==============================================
+==================================================
+=  VS Code + TypeScript + Node.js + Git + Heroku =
+==================================================
 
 A.  Fejlesztői környezet telepítése, beállítása
 ================================================
@@ -120,8 +121,6 @@ G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
 9. Változások szinkronizálása ("feltöltés")
    Alul a státus sorban balra "Synchronize Changes" -ra kattínt
-
-
 
 H. VS Code editor beállítása:
 ==============================
