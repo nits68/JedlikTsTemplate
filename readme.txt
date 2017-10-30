@@ -103,7 +103,6 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma:
    node_modules
-   js
    npm-debug.log
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
