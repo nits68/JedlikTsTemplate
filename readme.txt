@@ -94,6 +94,7 @@ https://code.visualstudio.com/docs
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://git-scm.com/book/en/v2
 https://heroku.com
+https://github.com/Microsoft/vscode-tips-and-tricks
 
 G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 ==============================================================
