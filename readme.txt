@@ -105,7 +105,7 @@ G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    pl.: GitHub asztali alkalmazással vagy github.com-on
    (JedlikTsTemplate a repository neve a példában)
 3. Git konfigurálása Git CMD ablakból:
-   git config --global user.name nitslaszlo@gmail.com
+   git config --global user.email nitslaszlo@gmail.com
    git config --global credential.helper wincred
 4. Visual Studio Code indítása - project betöltése
 5. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
