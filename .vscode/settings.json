@@ -18,6 +18,7 @@
     "files.exclude": {
         "**/.git": true,
         "**/.gitignore": true,
+	    "**/js": true,
         "**/node_modules": true,
         "**/*.js.map": true,
         "**/*.npmrc": true
