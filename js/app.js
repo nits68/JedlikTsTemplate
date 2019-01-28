@@ -4,7 +4,8 @@ const http = require("http");
 const content_1 = require("./content");
 class Program {
     constructor() {
-        http.createServer(new content_1.Content().Content).listen(process.env.PORT || 8080);
+        // tslint:disable-next-line: max-line-length
+        http.createServer(new content_1.default().Content).listen(process.env.PORT || 8080);
     }
 }
 new Program();

@@ -21,9 +21,8 @@ A.  Fejlesztői környezet telepítése, beállítása
 5.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X
     Kiterjesztés keresése, telepítés:
      - Debugger for Chrome
-     - TSLint
-     - vscode-pfd
-     (opcionális: további kiterjesztések telepítése igény szerint)
+     - TypeScript TSLint Plugin
+     (opcionális: további kiterjesztések telepítése igény szerint, pl.: LaTeX Workshop)
 6. Billentyűkombinációk beállítása: 
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
@@ -47,7 +46,7 @@ B.  Projekt előkészítése (inicializálása)
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
     Node.js lokális modul(ok) telepítése:
-    terminál ablakból "npm install" parancs futtatása
+    terminál ablakból "npm i" parancs futtatása
     (@types/node modult telepíti, lsd.: package.json)
 
 C.  Fejlesztés, tesztelés, kilépés

@@ -22,5 +22,5 @@
         "**/node_modules": true,
         "**/*.js.map": true,
         "**/*.npmrc": true
-      }
+    }
 }
