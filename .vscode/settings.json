@@ -8,7 +8,7 @@
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
     "editor.autoIndent": true,
-    "editor.autoClosingBrackets": true,    
+    "editor.autoClosingBrackets": "always",    
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
     "files.encoding": "utf8",
