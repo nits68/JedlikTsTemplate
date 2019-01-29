@@ -22,11 +22,11 @@ A.  Fejlesztői környezet telepítése, beállítása
     Kiterjesztés keresése, telepítés:
      - Debugger for Chrome
      - TypeScript TSLint Plugin
-     (opcionális: további kiterjesztések telepítése igény szerint, pl.: LaTeX Workshop)
+     (opcionális: további kiterjesztések telepítése igény szerint, pl.: GitLens)
 6. Billentyűkombinációk beállítása: 
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
-    Hozzárendelés, módosítás: "ceruza" ikonra kattíntással, törlés: Del bill.
+    Hozzárendelés, módosítás: "ceruza" ikonra kattintással, törlés: Del bill.
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del)
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
@@ -46,8 +46,7 @@ B.  Projekt előkészítése (inicializálása)
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
     Node.js lokális modul(ok) telepítése:
-    terminál ablakból "npm i" parancs futtatása
-    (@types/node modult telepíti, lsd.: package.json)
+    terminál ablakból "npm i" parancs futtatása (@types/node modult telepíti, lsd.: package.json)
 
 C.  Fejlesztés, tesztelés, kilépés
 ===================================
@@ -65,10 +64,6 @@ C.  Fejlesztés, tesztelés, kilépés
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):
     F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
 6.  goto 4.pont :-)
-7.  Kilépéskora futó task-ok "kilövése" a kuka ikonnal,
-    a TERMINAL (Ctrl-ö) ablakban!!!
-    Hibás működés gyakori oka a háttérben futó Node.js taskok,
-    ezeket ki kell "lőni" a feladatkezelővel!
 
 D. Verziók lekérdezése terminálablakból:
 =========================================
@@ -121,7 +116,7 @@ G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
 8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
 9. Változások szinkronizálása ("feltöltés")
-   Alul a státus sorban balra "Synchronize Changes" -ra kattínt
+   Alul a státus sorban balra "Synchronize Changes" -ra kattint
 
 H. VS Code editor beállítása:
 ==============================
