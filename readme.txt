@@ -38,12 +38,14 @@ A.  Fejlesztői környezet telepítése, beállítása
 B.  Projekt előkészítése (inicializálása)
 =========================================
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git
-    Új project esetén:
+    HA nem akarsz klónozni:
     JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába
-    Ha GitHub-on meglévő projektet akarunk git-el másik gépen vagy csoport tagjaként fejleszteni:
+    Vagy
+    Repo klónozása
     Parancssor  -> cd a projekt szülőmappája >
     "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"
-2.  JedlikTsTemplate-master mappa átnevezése tetszőlegesen, ha új projektet készítünk
+    Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git mappát!
+2.  JedlikTsTemplate-master vagy JedlikTsTemplate mappa átnevezése tetszőlegesen, ha új projektet készítünk
     Klónozott vagy átnevezett mappa helyi menüből: Open with Code,
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
