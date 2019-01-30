@@ -6,10 +6,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 ## A.  Fejlesztői környezet telepítése, beállítása
 1.  Node.js letöltése, telepítése:<br>
     https://nodejs.org/en/download/
-2.  Node.js command prompt, globális Node.js csomagok telepítése:<br>
-    "npm install -g typescript"<br>
-    "npm install -g tslint"<br>
-    "npm install -g nodemon"  parancsokkal<br><br>
+2.  Node.js command prompt, globális Node.js csomagok telepítése:
+    - "npm install -g typescript"
+    - "npm install -g tslint"
+    - "npm install -g nodemon"  parancsokkal<br><br>
 
     Keresési útvonal (path) bővítése, ha a parancssorból (CMD.EXE) kiadott "tsc" parancs nem található:<br>
       - Vezérlőpult/Rendszer/Speciális rendszerbeállítások/Speciális fül/Környezeti változók/Path/Új...
@@ -73,10 +73,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 - npm: npm -v
 
 ## E. Komponensek frissítése<br>
-VSCode: Automatikus, balra lent a fogaskeréken jelzi, ha új verzió jön ki<br>
-VSCode kiterjesztések: Automatikus, balra az Extensions ikon jelzi, ha új verzió jön ki<br>
-TypeScript: npm update -g typescript<br>
-Node.js: npm install --save-dev @types/node
+- VSCode: Automatikus, balra lent a fogaskeréken jelzi, ha új verzió jön ki
+- VSCode kiterjesztések: Automatikus, balra az Extensions ikon jelzi, ha új verzió jön ki
+- TypeScript: npm update -g typescript
+- Node.js: npm install --save-dev @types/node
 
 ## F. Hasznos linkek:
 - https://www.typescriptlang.org/docs/home.html
