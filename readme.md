@@ -1,4 +1,4 @@
-#  VS Code + TypeScript + Node.js + Git + Heroku =
+#  VS Code + TypeScript + Node.js + GitHub + Heroku
 
 ## Heroku teszt:
 https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
@@ -7,7 +7,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 1.  Node.js letöltése, telepítése:<br>
     https://nodejs.org/en/download/
 2.  Node.js command prompt, globális Node.js csomagok telepítése:<br>
-    "npm install -g typescript"<br><br>
+    "npm install -g typescript"<br>
     "npm install -g tslint"<br>
     "npm install -g nodemon"  parancsokkal<br><br>
 
@@ -22,8 +22,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Kiterjesztés keresése, telepítés:<br>
      - "Debugger for Chrome"
      - "TypeScript TSLint Plugin"
-     - "GitLens"<br>
-     (opcionális: további kiterjesztések telepítése igény szerint)
+     - "GitLens" (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: <br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
@@ -90,38 +89,37 @@ Node.js: npm install --save-dev @types/node
 - https://github.com/Microsoft/vscode-tips-and-tricks
 
 ## G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
-1. Github account létrehozása:
-   https://github.com/
+1. Github account létrehozása:<br>
+   https://github.com/<br>
    (nitslaszlo az account név a példában)
-2. Git repository létrehozása:
-   pl.: GitHub asztali alkalmazással vagy github.com-on
+2. Git repository létrehozása:<br>
+   pl.: GitHub asztali alkalmazással vagy github.com-on<br>
    (JedlikTsTemplate a repository neve a példában)
 3. Git konfigurálása Git CMD ablakból:
-   git config --global user.name nitslaszlo
-   git config --global user.email nitslaszlo@gmail.com
-   git config --global credential.helper wincred
+   - git config --global user.name nitslaszlo
+   - git config --global user.email nitslaszlo@gmail.com
+   - git config --global credential.helper wincred
 4. Visual Studio Code indítása - project betöltése
-5. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
+5. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G<br>
    majd "Initialize Repository"-ra kattint (felül)
 6. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
-   "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
-   "git push -u origin master"
-7. ".gitignore" fájl létrehozása (opcionális):
-   Ctrl-N -el új fájl létrehozása
-   A fájl tartalma:
-   node_modules
-   npm-debug.log
-   (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
+   - "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
+   - "git push -u origin master"
+7. ".gitignore" fájl létrehozása (opcionális):<br>
+   Ctrl-N -el új fájl létrehozása<br>
+   A fájl tartalma:<br>
+   node_modules<br>
+   npm-debug.log<br>
+   (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")<br>
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
 8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
-9. Változások szinkronizálása ("feltöltés")
+9. Változások szinkronizálása ("feltöltés")<br>
    Alul a státus sorban balra "Synchronize Changes" -ra kattint
 
-H. VS Code editor beállítása:
-==============================
+## H. VS Code editor beállítása:
 1. Ctrl-Shift-P vagy F1
 2. "Preferen..." gépelése
-3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy
-   Preferences: "Open User Settings" a felasználónált tárolt beállításokhoz
-   Konfig fájl workspace: projekt/.vscode/settings.json
+3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy<br>
+   Preferences: "Open User Settings" a felasználónált tárolt beállításokhoz<br>
+   Konfig fájl workspace: projekt/.vscode/settings.json<br>
    Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json
