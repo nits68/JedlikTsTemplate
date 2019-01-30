@@ -13,8 +13,7 @@ A.  Fejlesztői környezet telepítése, beállítása
 2.  Node.js command prompt, globális Node.js csomagok telepítése:
     "npm install -g typescript"
     "npm install -g tslint"
-    "npm install -g nodemon"
-    parancsokkal
+    "npm install -g nodemon"  parancsokkal
 
     Keresési útvonal (path) bővítése, ha a parancssorból (CMD.EXE) kiadott "tsc" parancs nem található: 
       1. Vezérlőpult/Rendszer/Speciális rendszerbeállítások/Speciális fül/Környezeti változók/Path/Új...
@@ -33,8 +32,8 @@ A.  Fejlesztői környezet telepítése, beállítása
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
     Hozzárendelés, módosítás: "ceruza" ikonra kattintással, törlés: Del bill.
-    - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del)
+    - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
 7. Opcionális: VSCode beállítása: lsd. az oldal végén
@@ -108,6 +107,7 @@ G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    pl.: GitHub asztali alkalmazással vagy github.com-on
    (JedlikTsTemplate a repository neve a példában)
 3. Git konfigurálása Git CMD ablakból:
+   git config --global user.name nitslaszlo
    git config --global user.email nitslaszlo@gmail.com
    git config --global credential.helper wincred
 4. Visual Studio Code indítása - project betöltése
