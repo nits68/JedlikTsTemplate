@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class Content {
     Content(req, res) {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-        res.write("<p style='color: red;'>Hello Node.js!</p>");
-        res.write("<p style='color: green;'>Hello TypeScript!</p>");
-        res.write("<p style='color: blue;'>Hello Heroku!</p>");
+        res.write("<h1 style='color: red;'>Hello Node.js!</h1>");
+        res.write("<h1 style='color: green;'>Hello TypeScript!</h1>");
+        res.write("<h1 style='color: blue;'>Hello Heroku!</h1>");
         res.end();
     }
 }
