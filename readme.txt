@@ -11,18 +11,20 @@ A.  Fejlesztői környezet telepítése, beállítása
     "npm install -g tslint"
     "npm install -g nodemon"
     parancsokkal
+
     Keresési útvonal (path) bővítése, ha a parancssorból (CMD.EXE) kiadott "tsc" parancs nem található: 
       1. Vezérlőpult/Rendszer/Speciális rendszerbeállítások/Speciális fül/Környezeti változók/Path/Új...
       2. "%APPDATA%\npm" hozzáadása (idézőjelek nélkül)
-3.  Git for windows telepítése (opcionális, git-hez):
+3.  Git for windows telepítése
     https://git-for-windows.github.io/
-4.  Visual Studio Code (továbbiakban VSCode) telepítése
-    https://code.visualstudio.com/docs/setup/setup-overview
+4.  Visual Studio Code - User Installer (továbbiakban VSCode) telepítése
+    https://code.visualstudio.com/Download
 5.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X
     Kiterjesztés keresése, telepítés:
-     - Debugger for Chrome
-     - TypeScript TSLint Plugin
-     (opcionális: további kiterjesztések telepítése igény szerint, pl.: GitLens)
+     - "Debugger for Chrome"
+     - "TypeScript TSLint Plugin"
+     - "GitLens"
+     (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: 
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
@@ -61,9 +63,10 @@ C.  Fejlesztés, tesztelés, kilépés
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/
+    A nodemon változás esetén csak a webszervert indítja újra, a böngészőt F5-el (böngészőben) kell frissíteni!
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):
-    F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
-6.  goto 4.pont :-)
+    VS Code-ban F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
+
 
 D. Verziók lekérdezése terminálablakból:
 =========================================
