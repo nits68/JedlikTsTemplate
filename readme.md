@@ -22,7 +22,8 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Kiterjesztés keresése, telepítés:<br>
      - "Debugger for Chrome"
      - "TypeScript TSLint Plugin"
-     - "GitLens" (opcionális: további kiterjesztések telepítése igény szerint)
+     - "GitLens" 
+     - "Markdown All in One" (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: <br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
