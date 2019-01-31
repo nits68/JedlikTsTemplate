@@ -23,7 +23,8 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "Debugger for Chrome"
      - "TypeScript TSLint Plugin"
      - "GitLens" 
-     - "Markdown All in One" (opcionális: további kiterjesztések telepítése igény szerint)
+     - "Markdown All in One"
+     - "vscode-pdf" (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: <br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
