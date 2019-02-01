@@ -12,7 +12,7 @@
         ],
         "jsdoc-format": true,
         "linebreak-style": [true, "CRLF"],
-        "max-line-length": [true, 90], // kivetítés (projektor) végett csak ennyi
+        "max-line-length": [true, 120], // kivetítésnél (projektor) javasolt a 90-es érték
         "next-line": [true,
             "check-catch",
             "check-else"

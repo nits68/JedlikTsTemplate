@@ -29,7 +29,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
     Hozzárendelés, módosítás: "ceruza" ikonra kattintással, törlés: Del bill.<br>
-    - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del)
+    - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del bill.)
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
