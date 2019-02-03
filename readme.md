@@ -6,12 +6,12 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 ## A.  Fejlesztői környezet telepítése, beállítása
 1.  Node.js letöltése, telepítése:<br>
     https://nodejs.org/en/download/
-2.  Node.js command prompt, globális Node.js csomagok telepítése:
+2.  Parancssor (CMD.exe), vagy Node.js command prompt, globális Node.js csomagok telepítése:
     - "npm install -g typescript"
     - "npm install -g tslint"
     - "npm install -g nodemon"  parancsokkal<br><br>
 
-    Keresési útvonal (path) bővítése, ha a parancssorból (CMD.EXE) kiadott "tsc" parancs nem található:<br>
+    Keresési útvonal (path) bővítése, ha a parancssorból (CMD.exe) kiadott "tsc" parancs nem található:<br>
       - Vezérlőpult/Rendszer/Speciális rendszerbeállítások/Speciális fül/Környezeti változók/Path/Új...
       - "%APPDATA%\npm" hozzáadása (idézőjelek nélkül)
 3.  Git for windows telepítése<br>
