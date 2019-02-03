@@ -55,11 +55,11 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
     Project mappa helyi menüből: Open with Code, vagy<br>
     VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
-2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re (app.ts => app.js)<br>
+2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re (app.ts => app.js, "npm run compile" paracsot futtatja)<br>
     (watch üzemmód, az első fordítás után már automatikus a fordítás)<br>
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => nodemon indítása<br>
-    (változásnál újratölti az app.js-t automatikusan)<br>
+    ("npm run start" paracsot futtatja)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/<br>
