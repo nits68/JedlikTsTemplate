@@ -5,7 +5,7 @@ import { read } from "fs";
 
 export default class Content {
 
-    Content(req: any, res: http.ServerResponse): void {
+    Content(req: http.IncomingMessage, res: http.ServerResponse): void {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.write("<h1 style='color: red;'>Hello Node.js!</h1>");
         res.write("<h1 style='color: green;'>Hello TypeScript!</h1>");
@@ -13,7 +13,7 @@ export default class Content {
 
         res.write("<b>Forráskód GitHub repository:</b><br>");
         res.write("<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>" +
-            "https://github.com/nitslaszlo/JedlikTsTemplate</a><br><br>");
+            "https://github.com/nitslaszlo/JedlikTsTemplate</a><br>");
         res.end();
     }
 }

@@ -10,7 +10,7 @@ class Content {
         res.write("<h1 style='color: blue;'>Hello Heroku!</h1>");
         res.write("<b>Forráskód GitHub repository:</b><br>");
         res.write("<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>" +
-            "https://github.com/nitslaszlo/JedlikTsTemplate</a><br><br>");
+            "https://github.com/nitslaszlo/JedlikTsTemplate</a><br>");
         res.end();
     }
 }
