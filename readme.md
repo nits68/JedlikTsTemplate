@@ -27,7 +27,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "vscode-pdf"
      - "Add jsdoc comments"
      - további kiterjesztések telepítése igény szerint
-6. Billentyűkombinációk beállítása: <br>
+6. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
     Hozzárendelés, módosítás: "ceruza" ikonra kattintással, törlés: Del bill.<br>
