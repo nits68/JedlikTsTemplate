@@ -2,7 +2,7 @@
 
 export default class Content {
 
-    content(req: http.IncomingMessage, res: http.ServerResponse): void {
+    public content(req: http.IncomingMessage, res: http.ServerResponse): void {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.write("<h1 style='color: red;'>Hello Node.js!</h1>");
         res.write("<h1 style='color: green;'>Hello TypeScript!</h1>");
@@ -15,4 +15,3 @@ export default class Content {
         res.end();
     }
 }
-

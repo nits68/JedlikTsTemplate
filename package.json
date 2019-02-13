@@ -16,7 +16,7 @@
     "start-debug": "node --debug=5858 ./js/app.js",
     "install:nodemodules": "npm install",
     "compile": "%APPDATA%/npm/tsc",
-    "nodemon": "%APPDATA%/npm/nodemon --inspect ./js/app.js"
+    "nodemon": "%APPDATA%/npm/nodemon --inspect -q ./js/app.js"
   },
   "author": "Nits László",
   "license": "MIT",
