@@ -63,12 +63,17 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => nodemon indítása<br>
     ("npm run start" paracsot futtatja)<br>
-    (amíg aktív a task, addig nem kell (lehet) újraindítani)
+    (amíg aktív a task, addig nem kell (lehet) újraindítani)<br>
+    (Olvasd el a 6. pontot is!)
 4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/<br>
     A nodemon változás esetén csak a webszervert indítja újra, a böngészőt F5-el (böngészőben) kell frissíteni!<br>
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):<br>
     VS Code-ban F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
+6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver továbbfut!<br>
+    Javasolt a terminál ablakban egy Ctrl-C-vel megszakítani a futását!<br>
+    Ha ezt elfelejted és nem indul (híbát jelez) újraindítás után a nodemon, akkor<br>
+    lépj ki a Code-ból, majd lőjed ki a Node.js folyamatot a feladatkezelővel. 
 
 
 ## D. Verziók lekérdezése terminálablakból:
