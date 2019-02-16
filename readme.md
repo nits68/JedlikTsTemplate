@@ -39,7 +39,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 
 ## B.  Projekt előkészítése (inicializálása)
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git<br>
-    - HA nem akarsz klónozni:<br>
+    - Ha nem akarsz klónozni:<br>
       JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába<br>
       Vagy:<br>
     - Repo klónozása<br>
@@ -73,7 +73,8 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver továbbfut!<br>
     Javasolt a terminál ablakban egy Ctrl-C-vel megszakítani a futását!<br>
     Ha ezt elfelejted és nem indul (híbát jelez) újraindítás után a nodemon, akkor<br>
-    lépj ki a Code-ból, majd lőjed ki a Node.js folyamatot a feladatkezelővel. 
+    lépj ki a Code-ból, majd lőjed ki a Node.js folyamatot a feladatkezelővel,<br>
+    de jobb erre a Process Hacker ( https://processhacker.sourceforge.io/ ). 
 
 
 ## D. Verziók lekérdezése terminálablakból:
