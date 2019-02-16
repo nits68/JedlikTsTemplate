@@ -1,4 +1,6 @@
 {
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
     "files.exclude": {
         "**/.git": true,
         "**/.gitignore": true,
