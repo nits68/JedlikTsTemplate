@@ -60,10 +60,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re<br>
     (app.ts => app.js, "npm run compile" paracsot futtatja)<br>
     (watch üzemmód, az első fordítás után már automatikus a fordítás)<br>
-    (amíg aktív a task, addig nem kell (lehet) újraindítani)
+    (amig aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => nodemon indítása<br>
     ("npm run start" paracsot futtatja)<br>
-    (amíg aktív a task, addig nem kell (lehet) újraindítani)<br>
+    (amig aktív a task, addig nem kell (lehet) újraindítani)<br>
     (Olvasd el a 6. pontot is!)
 4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/<br>
