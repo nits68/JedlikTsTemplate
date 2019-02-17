@@ -12,6 +12,11 @@
         "curly": [
             true,
             "ignore-same-line"
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format"
         ]
 	}
 }
