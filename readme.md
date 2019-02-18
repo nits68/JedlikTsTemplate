@@ -23,7 +23,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "Add jsdoc comments"
      - "Debugger for Chrome"
      - "GitLens"
-     - "LaTeX Workshop"
+     - "LaTeX Workshop" (PDF állományok megnyitása VS Code-ban, opcionális a telepítése)
      - "Markdown All in One"
      - "TypeScript TSLint Plugin"
      - további kiterjesztések telepítése igény szerint
@@ -64,7 +64,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 3.  Ctrl-Shift-T => nodemon indítása<br>
     ("npm run start" paracsot futtatja)<br>
     (amig aktív a task, addig nem kell (lehet) újraindítani)<br>
-    (Olvasd el a 6. pontot is!)
+    (FONTOS!!! Olvasd el a 6. pontot!)
 4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/<br>
     A nodemon változás esetén csak a webszervert indítja újra, a böngészőt F5-el (böngészőben) kell frissíteni!<br>
