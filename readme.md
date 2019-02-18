@@ -106,26 +106,30 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 2. Git repository létrehozása:<br>
    pl.: GitHub asztali alkalmazással vagy github.com-on<br>
    (JedlikTsTemplate a repository neve a példában)
-3. Git konfigurálása Git CMD ablakból:
+3. Git konfigurálása CMD vagy "Git CMD" ablakból:
    - git config --global user.name nitslaszlo
    - git config --global user.email nitslaszlo@gmail.com
    - git config --global credential.helper wincred
 4. Visual Studio Code indítása - project betöltése
-5. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G<br>
-   majd "Initialize Repository"-ra kattint (felül)
-6. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
-   - "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"
-   - "git push -u origin master"
-7. ".gitignore" fájl létrehozása (opcionális):<br>
-   Ctrl-N -el új fájl létrehozása<br>
+5. Ha van klónozott projektben .Git (rejtett!!!) mappa, akkor törölni kell
+6. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G<br>
+   majd "Initialize Repository"-ra kattint (felül a rombusz ikonnal)<br>
+   majd meg kell adni a projekt könyvtárát a git-nek
+7. Remote repository megadása új terminál ablakból (Ctr-Shift-ö), például:
+   - "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
+   (A pontos parancsot a repo létrehozásakor kiírja a GitHub)   
+8. ".gitignore" fájl szerkesztése/létrehozása (ezek a mappák/állományok nem lesznek feltöltve):<br>
+   Ctrl-N -el új fájl létrehozása vagy meglévő szerkesztése<br>
    A fájl tartalma:<br>
    node_modules<br>
    npm-debug.log<br>
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")<br>
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
-8. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
-9. Változások szinkronizálása ("feltöltés")<br>
-   Alul a státus sorban balra "Synchronize Changes" -ra kattint
+9. Ctrl-Shift-G -> Commit message megadása felül, majd commit Ctrl-Enter -el<br>
+   (Első alkalommal GitHub felhasználói e-mail címet és jelszót kér) 
+10. Változások szinkronizálása ("feltöltés")<br>
+   Alul a státus sorban balra "Synchronize Changes" ikonra kattint
+11. VS Code "Auto fetch" kérdésére válaszoljunk "always"-al ("git.autofetch": true lesz beállítva)
 
 ## H. VS Code editor beállítása:
 1. Ctrl-Shift-P vagy F1
