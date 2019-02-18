@@ -60,11 +60,11 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Project mappa helyi menüből: Open with Code, vagy<br>
     VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re<br>
-    (app.ts => app.js, "npm run compile" paracsot futtatja)<br>
+    (app.ts => app.js, "npm run compile" parancsot futtatja)<br>
     (watch üzemmód, az első fordítás után már automatikus a fordítás)<br>
     (amig aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => nodemon indítása<br>
-    ("npm run start" paracsot futtatja)<br>
+    ("npm run start" parancsot futtatja)<br>
     (amig aktív a task, addig nem kell (lehet) újraindítani)<br>
     (FONTOS!!! Olvasd el a 6. pontot!)
 4.  content.ts szerkesztése
@@ -74,7 +74,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     VS Code-ban F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
 6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver továbbfut!<br>
     Javasolt a terminál ablakban egy Ctrl-C-vel megszakítani a futását!<br>
-    Ha ezt elfelejted és nem indul (híbát jelez) újraindítás után a nodemon, akkor<br>
+    Ha ezt elfelejted, és nem indul (hibát jelez) újraindítás után a nodemon, akkor<br>
     lépj ki a Code-ból, majd lőjed ki a Node.js folyamatot a feladatkezelővel,<br>
     de jobb erre a Process Hacker ( https://processhacker.sourceforge.io/ ). 
 
@@ -125,22 +125,23 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
    A fájl tartalma:<br>
    node_modules<br>
    npm-debug.log<br>
-   (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")<br>
+   (További mappák és fájlok megadhatók, melyek nem kerülnek "feltöltésre")<br>
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
-9. Ctrl-Shift-G -> Commit message megadása felül, majd commit uatsítás kiadása<br>
+9. Ctrl-Shift-G -> Commit message megadása felül, majd "commit" utasítás kiadása<br>
    Ctrl-Enter -el, vagy felül a "pipa" ikonnal<br>
-10. "There are no staged ..." kérdésre válaszloj "always"-el
+10. "There are no staged ..." kérdésre válaszolj "always"-el
 11. Változások szinkronizálása ("feltöltés")<br>
     Alul a státus sorban balra "Synchronize Changes" ikonra kattint<br>
-    Első alkalommal GitHub felhasználói nevet vagy e-mail címet és jelszót kér!
+    Első alkalommal a GitHub felhasználói nevet vagy e-mail címet és jelszót kér!
 10. Változások szinkronizálása ("feltöltés")<br>
-    Alul a státus sorban balra "Synchronize Changes" (felhő) ikonra kattint
-11. VS Code "Auto fetch" kérdésére válaszoljunk "always"-al ("git.autofetch": true lesz beállítva)
+    Alul a státus sorban balra "Synchronize Changes" (felhő) ikonra kattint<br>
+    Később fel- és letöltésnél egymást "kergető" nyilak lesznek.
+11. A "Would you like Code to periodically run 'git fetch'?"  kérdésére válaszoljunk "yes"-el<br>           ("git.autofetch": true lesz beállítva, alapértelmezésben 3 percenként ellenőrzi a változásokat)
 
 ## H. VS Code editor beállítása:
 1. Ctrl-Shift-P vagy F1
 2. "Preferen..." gépelése
 3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy<br>
-   Preferences: "Open User Settings" a felasználónált tárolt beállításokhoz<br>
+   Preferences: "Open User Settings" a felhasználónál tárolt beállításokhoz<br>
    Konfig fájl workspace: projekt/.vscode/settings.json<br>
    Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json
