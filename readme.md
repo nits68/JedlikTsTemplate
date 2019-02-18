@@ -100,6 +100,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 - https://git-scm.com/book/en/v2
 - https://heroku.com
 - https://github.com/Microsoft/vscode-tips-and-tricks
+- https://desoft.hu/downloads/git/git_v1.0.pdf
 
 ## G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 1. Github account létrehozása:<br>
