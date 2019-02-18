@@ -35,7 +35,9 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
-7. Opcionális: VSCode beállítása: lsd. az oldal végén
+7. A .vscode/settings.json állományban (files.exclude) vezérelhető az<br>
+   Explorer ablakban megjelenő állományok/mappák láthatósága
+8. Opcionális: VSCode beállítása: lsd. az oldal végén
 
 ## B.  Projekt előkészítése (inicializálása)
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git<br>
@@ -125,10 +127,14 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
    npm-debug.log<br>
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")<br>
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
-9. Ctrl-Shift-G -> Commit message megadása felül, majd commit Ctrl-Enter -el<br>
-   (Első alkalommal GitHub felhasználói e-mail címet és jelszót kér) 
+9. Ctrl-Shift-G -> Commit message megadása felül, majd commit uatsítás kiadása<br>
+   Ctrl-Enter -el, vagy felül a "pipa" ikonnal<br>
+10. "There are no staged ..." kérdésre válaszloj "always"-el
+11. Változások szinkronizálása ("feltöltés")<br>
+    Alul a státus sorban balra "Synchronize Changes" ikonra kattint<br>
+    Első alkalommal GitHub felhasználói nevet vagy e-mail címet és jelszót kér!
 10. Változások szinkronizálása ("feltöltés")<br>
-   Alul a státus sorban balra "Synchronize Changes" ikonra kattint
+    Alul a státus sorban balra "Synchronize Changes" (felhő) ikonra kattint
 11. VS Code "Auto fetch" kérdésére válaszoljunk "always"-al ("git.autofetch": true lesz beállítva)
 
 ## H. VS Code editor beállítása:
