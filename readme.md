@@ -35,7 +35,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
-7. A .vscode/settings.json állományban (files.exclude) vezérelhető az<br>
+7. A .vscode/settings.json állományban ("files.exclude" szekcióban) vezérelhető az<br>
    Explorer ablakban megjelenő állományok/mappák láthatósága
 8. Opcionális: VSCode beállítása: lsd. az oldal végén
 
@@ -48,7 +48,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
       Parancssor  -> cd a projekt szülőmappája<br>
       "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
       Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git mappát!
-2.  JedlikTsTemplate-master vagy JedlikTsTemplate mappa átnevezése tetszőlegesen, ha új projektet készítünk<br>
+2.  JedlikTsTemplate mappa átnevezése tetszőlegesen, ha új projektet készítünk<br>
     Klónozott vagy átnevezett mappa helyi menüből: Open with Code,<br>
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása<br>
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö<br>
