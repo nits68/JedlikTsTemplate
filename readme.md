@@ -22,10 +22,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Kiterjesztés keresése, telepítés:<br>
      - "Add jsdoc comments"
      - "Debugger for Chrome"
-     - "GitLens"
+     - "GitLens" (extra Git funkciók, opcionális a telepítése)
      - "LaTeX Workshop" (PDF állományok megnyitása VS Code-ban, opcionális a telepítése)
      - "Markdown All in One"
-     - "TypeScript TSLint Plugin"
+     - "TypeScript TSLint Plugin" (NEM a "TSLint (deprecated)" !!! )
      - további kiterjesztések telepítése igény szerint
 6. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
