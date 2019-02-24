@@ -12,5 +12,16 @@
         "**/node_modules": true,
         "**/*.js.map": true,
         "**/*.npmrc": true
-    }
+    },
+    "spellright.notificationClass": "information",
+    "spellright.language": [
+        "en",
+        "hu"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "typescript"
+    ]
 }

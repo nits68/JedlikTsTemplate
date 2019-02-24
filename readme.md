@@ -23,9 +23,9 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "Add jsdoc comments"
      - "Debugger for Chrome"
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
-     - "LaTeX Workshop" (PDF állományok megnyitása VS Code-ban, opcionális a telepítése)
      - "Markdown All in One"
      - "TypeScript TSLint Plugin" (NEM a "TSLint (deprecated)" !!! )
+     - "Spell Right" (helyesírás ellenőrzés, telepítése opcionális)
      - további kiterjesztések telepítése igény szerint
 6. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
@@ -58,7 +58,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 ## C.  Fejlesztés, tesztelés, kilépés
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
     Project mappa helyi menüből: Open with Code, vagy<br>
-    VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
+    VSCode indítása után File/Open Folder... menü pontba a project mappa megnyitása
 2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re<br>
     (app.ts => app.js, "npm run compile" parancsot futtatja)<br>
     (watch üzemmód, az első fordítás után már automatikus a fordítás)<br>
@@ -72,7 +72,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     A nodemon változás esetén csak a webszervert indítja újra, a böngészőt F5-el (böngészőben) kell frissíteni!<br>
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):<br>
     VS Code-ban F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
-6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver továbbfut!<br>
+6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver tovább fut!<br>
     Javasolt a terminál ablakban egy Ctrl-C-vel megszakítani a futását!<br>
     Ha ezt elfelejted, és nem indul (hibát jelez) újraindítás után a nodemon, akkor<br>
     lépj ki a Code-ból, majd lőjed ki a Node.js folyamatot a feladatkezelővel,<br>
@@ -103,7 +103,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 - https://desoft.hu/downloads/git/git_v1.0.pdf
 
 ## G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
-1. Github account létrehozása:<br>
+1. GitHub account létrehozása:<br>
    https://github.com/<br>
    (nitslaszlo az account név a példában)
 2. Git repository létrehozása:<br>
