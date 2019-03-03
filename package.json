@@ -21,6 +21,6 @@
   "author": "Nits László",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^11.9.4"
+    "@types/node": "^11.10.4"
   }
 }
