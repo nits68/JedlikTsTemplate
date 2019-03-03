@@ -118,7 +118,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 6. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G<br>
    majd "Initialize Repository"-ra kattint (felül a rombusz ikonnal)<br>
    majd meg kell adni a projekt könyvtárát a git-nek
-7. Remote repository megadása új terminál ablakból (Ctr-Shift-ö), például:
+7. Remote repository megadása új terminál ablakból (Ctrl-Shift-ö), például:
    - "git remote add origin https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
    (A pontos parancsot a repo létrehozásakor kiírja a GitHub)   
 8. ".gitignore" fájl szerkesztése/létrehozása (ezek a mappák/állományok nem lesznek feltöltve):<br>

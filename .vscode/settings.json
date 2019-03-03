@@ -1,6 +1,16 @@
 {
-    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
     "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "extensions.ignoreRecommendations": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "html.format.wrapLineLength": 0,
+    "files.autoSave": "afterDelay",
+    "files.eol": "\r\n",
     "files.exclude": {
         "**/.git": false,
         "**/.gitignore": false,
