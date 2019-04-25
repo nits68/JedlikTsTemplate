@@ -75,8 +75,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver tovább fut!<br>
     Javasolt a terminál ablakban egy Ctrl-C-vel megszakítani a futását!<br>
     Ha ezt elfelejted, és nem indul (hibát jelez) újraindítás után a nodemon, akkor<br>
-    lépj ki a Code-ból, majd lőjed ki a Node.js folyamatot a feladatkezelővel,<br>
-    de jobb erre a Process Hacker ( https://processhacker.sourceforge.io/ ). 
+    futtasd az "npm run kill" parancsot a terminál ablakból. 
 
 
 ## D. Verziók lekérdezése terminálablakból:
@@ -134,10 +133,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 11. Változások szinkronizálása ("feltöltés")<br>
     Alul a státus sorban balra "Synchronize Changes" ikonra kattint<br>
     Első alkalommal a GitHub felhasználói nevet vagy e-mail címet és jelszót kér!
-10. Változások szinkronizálása ("feltöltés")<br>
+12. Változások szinkronizálása ("feltöltés")<br>
     Alul a státus sorban balra "Synchronize Changes" (felhő) ikonra kattint<br>
     Később fel- és letöltésnél egymást "kergető" nyilak lesznek.
-11. A "Would you like Code to periodically run 'git fetch'?"  kérdésére válaszoljunk "yes"-el<br>           ("git.autofetch": true lesz beállítva, alapértelmezésben 3 percenként ellenőrzi a változásokat)
+13. A "Would you like Code to periodically run 'git fetch'?"  kérdésére válaszoljunk "yes"-el<br>           ("git.autofetch": true lesz beállítva, alapértelmezésben 3 percenként ellenőrzi a változásokat)
 
 ## H. VS Code editor beállítása:
 1. Ctrl-Shift-P vagy F1

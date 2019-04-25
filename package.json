@@ -16,11 +16,12 @@
     "start-debug": "node --debug=5858 ./js/app.js",
     "install:nodemodules": "npm install",
     "compile": "tsc",
-    "nodemon": "nodemon --inspect -q ./js/app.js"
+    "nodemon": "nodemon --inspect -q ./js/app.js",
+    "kill": "taskkill /im node.exe /F"
   },
   "author": "Nits László",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^11.13.4"
+    "@types/node": "^11.13.7"
   }
 }
