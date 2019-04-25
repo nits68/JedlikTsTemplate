@@ -7,7 +7,7 @@ export default class Content {
     public content(req: http.IncomingMessage, res: http.ServerResponse): void {
         // favicon.ico kérés kiszolgálása:
         if (req.url === "/favicon.ico") {
-            const FAVICON = path.join(__dirname, "public", "favicon.ico");
+            const FAVICON = path.join("favicon.ico");
             res.writeHead(200, { "Content-Type": "image/x-icon" });
             fs.createReadStream(FAVICON).pipe(res);
             return;
