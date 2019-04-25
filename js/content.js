@@ -1,14 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("fs");
-const path = require("path");
 class Content {
     content(req, res) {
         // favicon.ico kérés kiszolgálása:
         if (req.url === "/favicon.ico") {
-            const FAVICON = path.join("favicon.ico");
             res.writeHead(200, { "Content-Type": "image/x-icon" });
-            fs.createReadStream(FAVICON).pipe(res);
+            fs.createReadStream("favicon.ico").pipe(res);
             return;
         }
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
