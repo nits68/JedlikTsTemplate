@@ -78,11 +78,13 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     futtasd az "npm run kill" parancsot a terminál ablakból. 
 
 
-## D. Verziók lekérdezése terminálablakból:
+## D. Verziók és telepített node.js csomagok lekérdezése terminálablakból:
 - TypeScript: tsc -v
 - Node.js: node -v
 - git: git --version
 - npm: npm -v
+- telepített globális csomagok: npm -g ls --depth=0
+- telepített lokális csomagok: npm ls --depth=0
 
 ## E. Komponensek frissítése<br>
 - VSCode: Automatikus, balra lent a fogaskeréken jelzi, ha új verzió jön ki
