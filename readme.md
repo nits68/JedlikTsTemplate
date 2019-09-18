@@ -6,28 +6,20 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 ## A.  Fejlesztői környezet telepítése, beállítása
 1.  Node.js letöltése, telepítése:<br>
     https://nodejs.org/en/download/
-2.  Parancssor (CMD.exe), vagy Node.js command prompt, globális Node.js csomagok telepítése:
-    - "npm install -g typescript"
-    - "npm install -g tslint"
-    - "npm install -g nodemon"  parancsokkal<br><br>
-
-    Keresési útvonal (path) bővítése, ha a parancssorból (CMD.exe) kiadott "tsc" parancs nem található:<br>
-      - Vezérlőpult/Rendszer/Speciális rendszerbeállítások/Speciális fül/Környezeti változók/Path/Új...
-      - "%APPDATA%\npm" hozzáadása (idézőjelek nélkül)
-3.  Git for windows telepítése<br>
+2.  Git for windows telepítése<br>
     https://git-for-windows.github.io/
-4.  Visual Studio Code - User Installer (továbbiakban VSCode) telepítése<br>
+3.  Visual Studio Code - User Installer (továbbiakban VSCode) telepítése<br>
     https://code.visualstudio.com/Download
-5.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
+4.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
     Kiterjesztés keresése, telepítés:<br>
-     - "Add jsdoc comments"
-     - "Debugger for Chrome"
+     - "Add jsdoc comments" (opcionális)
+     - "Debugger for Chrome" (fontos, kell)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
-     - "Markdown All in One"
-     - "TypeScript TSLint Plugin" (NEM a "TSLint (deprecated)" !!! )
-     - "Spell Right" (helyesírás ellenőrzés, telepítése opcionális)
+     - "Markdown All in One" (opcionális)
+     - "TypeScript TSLint Plugin" (NEM a "TSLint (deprecated)" !!! ) (fontos, kell)
+     - "Spell Right" (helyesírás ellenőrzés) (opcionális)
      - további kiterjesztések telepítése igény szerint
-6. Billentyűkombinációk beállítása:<br>
+5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
     Hozzárendelés, módosítás: "ceruza" ikonra kattintással, törlés: Del bill.<br>
@@ -35,9 +27,9 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
-7. A .vscode/settings.json állományban ("files.exclude" szekcióban) vezérelhető az<br>
+6. A .vscode/settings.json állományban ("files.exclude" szekcióban) vezérelhető az<br>
    Explorer ablakban megjelenő állományok/mappák láthatósága
-8. Opcionális: VSCode beállítása: lsd. az oldal végén
+7. Opcionális: VSCode beállítása: lsd. az oldal végén
 
 ## B.  Projekt előkészítése (inicializálása)
 1.  https://github.com/nitslaszlo/JedlikTsTemplate.git<br>
@@ -55,7 +47,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Node.js lokális modul(ok) telepítése:<br>
     terminál ablakból "npm i" parancs futtatása (@types/node modult telepíti, lsd.: package.json)
 
-## C.  Fejlesztés, tesztelés, kilépés
+## C.  Fejlesztés, tesztelés, kilépés, KILL
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
     Project mappa helyi menüből: Open with Code, vagy<br>
     VSCode indítása után File/Open Folder... menü pontba a project mappa megnyitása

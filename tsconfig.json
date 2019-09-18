@@ -1,10 +1,23 @@
 {
     "compilerOptions": {
         "target": "es6",
+        "strict": true,
+        "pretty": true,
+        "removeComments": true,
+        "experimentalDecorators": true,
         "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "node",
+        "importHelpers": true,
         "sourceMap": true,
         "watch": true,
         "outDir": "./js",
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
         "plugins": [
             {
                 "name": "typescript-tslint-plugin",

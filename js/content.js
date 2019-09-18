@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("fs");
 class Content {
     content(req, res) {
-        // favicon.ico kérés kiszolgálása:
         if (req.url === "/favicon.ico") {
             res.writeHead(200, { "Content-Type": "image/x-icon" });
             fs.createReadStream("favicon.ico").pipe(res);

@@ -22,6 +22,9 @@
   "author": "Nits László",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^12.7.4"
+    "@types/node": "^12.7.4",
+    "nodemon": "^1.19.2",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
   }
 }
