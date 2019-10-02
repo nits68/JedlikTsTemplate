@@ -3,11 +3,11 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
     "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
     "extensions.ignoreRecommendations": true,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "html.format.wrapLineLength": 0,
     "files.autoSave": "afterDelay",
     "files.eol": "\r\n",
     "files.exclude": {
