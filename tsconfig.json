@@ -5,6 +5,7 @@
         "pretty": true,
         "removeComments": true,
         "experimentalDecorators": true,
+        "esModuleInterop": true,
         "module": "commonjs",
         "emitDecoratorMetadata": true,
         "moduleResolution": "node",

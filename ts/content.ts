@@ -1,6 +1,5 @@
-﻿import * as fs from "fs";
-import * as http from "http";
-import * as path from "path";
+﻿import fs from "fs";
+import http from "http";
 
 export default class Content {
 
