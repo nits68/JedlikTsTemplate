@@ -1,5 +1,4 @@
 #  VS Code + TypeScript + Node.js + GitHub + Heroku
-new2
 
 ## Heroku teszt:
 https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
