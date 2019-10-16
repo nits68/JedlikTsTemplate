@@ -8,6 +8,7 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
+    "git.autofetchPeriod": 180,
     "files.autoSave": "afterDelay",
     "files.eol": "\r\n",
     "files.exclude": {
@@ -17,7 +18,7 @@
         "**/tsconfig.json": false,
         "**/tslint.json": false,
         "**/package-lock.json": true,
-	    "**/js": true,
+        "**/js": true,
         "**/node_modules": true,
         "**/*.js.map": true,
         "**/*.npmrc": true
