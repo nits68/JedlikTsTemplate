@@ -22,9 +22,12 @@
   "author": "Nits László",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^12.7.12",
-    "nodemon": "^1.19.3",
+    "@types/node": "^12.11.2",
+    "nodemon": "^1.19.4",
     "tslint": "^5.20.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
   }
 }
