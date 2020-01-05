@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target": "ESNext",
         "strict": true,
         "pretty": true,
         "removeComments": true,
         "experimentalDecorators": true,
         "esModuleInterop": true,
-        "module": "commonjs",
+        "module": "CommonJS",
         "emitDecoratorMetadata": true,
         "moduleResolution": "node",
         "importHelpers": true,
@@ -19,16 +19,6 @@
         "typeRoots": [
             "node_modules/@types"
         ],
-        "plugins": [
-            {
-                "name": "typescript-tslint-plugin",
-                "alwaysShowRuleFailuresAsWarnings": false,
-                "ignoreDefinitionFiles": true,
-                "configFile": "tslint.json",
-                "suppressWhileTypeErrorsPresent": false,
-                "mockTypeScriptVersion": false
-            }
-        ]
     },
     "include": [
         "ts/**/*"

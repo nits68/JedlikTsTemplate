@@ -12,12 +12,14 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     https://code.visualstudio.com/Download
 4.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
     Kiterjesztés keresése, telepítés:<br>
-     - "Add jsdoc comments" (opcionális)
      - "Debugger for Chrome" (fontos, kell)
+     - "ESLint" (fontos, kell)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
-     - "Markdown All in One" (opcionális)
-     - "TypeScript TSLint Plugin" (NEM a "TSLint (deprecated)" !!! ) (fontos, kell)
+     - "npm"
+     - "npm Intellisense"
+     - "Prettier" (fontos, kell)
      - "Spell Right" (helyesírás ellenőrzés) (opcionális)
+     - vscode-pdf (opcionális)
      - további kiterjesztések telepítése igény szerint
 5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>

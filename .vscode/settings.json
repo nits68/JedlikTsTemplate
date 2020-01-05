@@ -1,9 +1,20 @@
 {
-    "editor.formatOnPaste": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.enable": true,
+    "eslint.validate": ["javascript", "typescript"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.formatOnType": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "extensions.ignoreRecommendations": true,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
@@ -24,13 +35,6 @@
         "**/*.npmrc": true
     },
     "spellright.notificationClass": "information",
-    "spellright.language": [
-        "en",
-        "hu"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ]
+    "spellright.language": ["en", "hu"],
+    "spellright.documentTypes": ["latex", "plaintext"]
 }
