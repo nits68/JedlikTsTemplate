@@ -17,9 +17,7 @@ export default class Content {
         res.write("<h1 style='color: black;'>Hello Jedlik!!!!!</h1>");
 
         res.write("<b>Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:</b><br>");
-        res.write(
-            "<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>" + "https://github.com/nitslaszlo/JedlikTsTemplate</a><br>"
-        );
+        res.write("<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>https://github.com/nitslaszlo/JedlikTsTemplate</a><br>");
         res.end();
     }
 }
