@@ -21,9 +21,9 @@ class Content {
         let a = 0;
         const input = JSON.parse(fs_1.default.readFileSync("input.json", "utf-8"));
         a = a + input.age * 2;
-        res.write(`${a}. feladat:lll\n`);
+        res.write(`${a}. feladat:\n`);
         res.write("\n");
-        res.write("<b>Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:</b><br>");
+        res.write("Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:\n");
         res.write("<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>https://github.com/nitslaszlo/JedlikTsTemplate</a><br>");
         res.write("</pre></body>");
         res.write("</html>");

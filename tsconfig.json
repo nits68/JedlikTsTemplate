@@ -12,7 +12,7 @@
         "importHelpers": true,
         "sourceMap": true,
         "watch": false,
-        "outDir": "./js",
+        "outDir": "dist",
         "types": [
             "node"
         ],
@@ -21,10 +21,11 @@
         ],
     },
     "include": [
-        "ts/**/*"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules/**/*",
+        "dist/**/*",
         "**/node_modules/*"
     ]
 }

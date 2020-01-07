@@ -13,12 +13,12 @@
         "url": "https://github.com/nitslaszlo/JedlikTsTemplate"
     },
     "scripts": {
-        "start": "node ./js/app.js",
-        "start-debug": "node --debug=5858 ./js/app.js",
+        "start": "node ./dist/app.js",
+        "start-debug": "node --debug=5858 ./dist/app.js",
         "install:nodemodules": "npm install",
         "compile": "tsc",
         "kill": "taskkill /im node.exe /F",
-        "test": "ts-node-dev --inspect --clear --respawn --transpileOnly ./ts/app.ts"
+        "test": "ts-node-dev --inspect --clear --respawn --transpileOnly ./src/app.ts"
     },
     "author": "Nits László",
     "license": "MIT",
