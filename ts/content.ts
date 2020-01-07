@@ -20,10 +20,13 @@ export default class Content {
         res.write("<h1 style='color: blue;'>Hello Heroku!</h1>");
         res.write("<h1 style='color: black;'>Hello Jedlik!</h1>");
         const sorszám = 1;
-        res.write(`${sorszám}. feladat`);
-
+        res.write(`${sorszám}. feladat:\n`);
+        res.write("\n");
         res.write("<b>Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:</b><br>");
         res.write("<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>https://github.com/nitslaszlo/JedlikTsTemplate</a><br>");
+
+        res.write("</pre></body>");
+        res.write("</html>");
         res.end();
     }
 }
