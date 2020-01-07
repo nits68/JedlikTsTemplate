@@ -11,7 +11,7 @@
         "moduleResolution": "node",
         "importHelpers": true,
         "sourceMap": true,
-        "watch": true,
+        "watch": false,
         "outDir": "./js",
         "types": [
             "node"
