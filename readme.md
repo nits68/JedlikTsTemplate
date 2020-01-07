@@ -15,8 +15,8 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "Debugger for Chrome" (fontos, kell)
      - "ESLint" (fontos, kell)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
-     - "npm"
-     - "npm Intellisense"
+     - "npm" (opcionális)
+     - "npm Intellisense" (opcionális)
      - "Prettier" (fontos, kell)
      - "Spell Right" (helyesírás ellenőrzés) (opcionális)
      - vscode-pdf (opcionális)
@@ -47,7 +47,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása<br>
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö<br>
     Node.js lokális modul(ok) telepítése:<br>
-    terminál ablakból "npm i" parancs futtatása (@types/node modult telepíti, lsd.: package.json)
+    terminál ablakból "npm i" parancs futtatása (lsd.: package.json dependencies, devDependencies)
 
 ## C.  Fejlesztés, tesztelés, kilépés, KILL
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
@@ -55,22 +55,16 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     VSCode indítása után File/Open Folder... menü pontba a project mappa megnyitása
 2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re<br>
     (app.ts => app.js, "npm run compile" parancsot futtatja)<br>
-    (watch üzemmód, az első fordítás után már automatikus a fordítás)<br>
     (amig aktív a task, addig nem kell (lehet) újraindítani)
-3.  Ctrl-Shift-T => nodemon indítása<br>
-    ("npm run start" parancsot futtatja)<br>
+3.  Ctrl-Shift-T => ts-node-dev indítása (TypeScript állományokat futtat)<br>
+    ("npm run test" parancsot futtatja)<br>
     (amig aktív a task, addig nem kell (lehet) újraindítani)<br>
-    (FONTOS!!! Olvasd el a 6. pontot!)
 4.  content.ts szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/<br>
-    A nodemon változás esetén csak a webszervert indítja újra, a böngészőt F5-el (böngészőben) kell frissíteni!<br>
+    A ts-node-dev változás esetén újraindul, a böngészőt F5-el (böngészőben) frissíteni kell!<br>
+    Automatikus böngésző frissítés: lsd.: I. pont -> LiveReload<br>
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):<br>
     VS Code-ban F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
-6.  Kilépésnél a Ctrl-Shift-T-vel indított nodemon szerver tovább fut!<br>
-    Javasolt a terminál ablakban egy Ctrl-C-vel megszakítani a futását!<br>
-    Ha ezt elfelejted, és nem indul (hibát jelez) újraindítás után a nodemon, akkor<br>
-    futtasd az "npm run kill" parancsot a terminál ablakból. 
-
 
 ## D. Verziók és telepített node.js csomagok lekérdezése terminálablakból:
 - TypeScript: tsc -v
@@ -132,7 +126,8 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 12. Változások szinkronizálása ("feltöltés")<br>
     Alul a státus sorban balra "Synchronize Changes" (felhő) ikonra kattint<br>
     Később fel- és letöltésnél egymást "kergető" nyilak lesznek.
-13. A "Would you like Code to periodically run 'git fetch'?"  kérdésére válaszoljunk "yes"-el<br>           ("git.autofetch": true lesz beállítva, alapértelmezésben 3 percenként ellenőrzi a változásokat)
+13. A "Would you like Code to periodically run 'git fetch'?"  kérdésére válaszoljunk "yes"-el<br>
+    ("git.autofetch": true lesz beállítva, alapértelmezésben 3 percenként ellenőrzi a változásokat)
 
 ## H. VS Code editor beállítása:
 1. Ctrl-Shift-P vagy F1
@@ -145,7 +140,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 ## I. LiveReload - Automatikus böngésző frissítés
 1. Telepítsed a LiveReload asztali alakalmazást: http://livereload.com/
 2. Telepítsed a LiveReload Chrome bővítményt:<br>
-  https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
+    https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
 3. Beállítások:<br>
-https://www.logicbig.com/tutorials/misc/typescript/project-auto-refresh-with-live-reload.html
+    https://www.logicbig.com/tutorials/misc/typescript/project-auto-refresh-with-live-reload.html
 
