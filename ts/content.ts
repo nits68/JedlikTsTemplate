@@ -1,6 +1,13 @@
 ﻿import fs from "fs";
 import http from "http";
 
+interface InputInterface {
+    name: string;
+    age: number;
+    gender: string;
+    department: string;
+    car: string;
+}
 export default class Content {
     public content(req: http.IncomingMessage, res: http.ServerResponse): void {
         // favicon.ico kérés kiszolgálása:
@@ -19,10 +26,12 @@ export default class Content {
         res.write("<h2 style='color: green;'>Hello TypeScript!</h2>");
         res.write("<p style='color: blue;'>Hello Heroku!</p>");
         res.write("<h1 style='color: black;'>Hello Jedlik!</h1>");
-        const sorszám = 3;
-        res.write(`${sorszám}. feladat:\n`);
+        let a = 0;
+        const input: InputInterface = JSON.parse(fs.readFileSync("input.json", "utf-8"));
+        a = a + input.age * 2;
+        res.write(`${a}. feladat:\n`);
         res.write("\n");
-        res.write("<b>Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:</b><br>");
+        res.write("Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:\n");
         res.write("<a href='https://github.com/nitslaszlo/JedlikTsTemplate' target='_blank'>https://github.com/nitslaszlo/JedlikTsTemplate</a><br>");
 
         res.write("</pre></body>");
