@@ -17,6 +17,7 @@
         "start-debug": "node --debug=5858 ./dist/app.js",
         "install:nodemodules": "npm install",
         "compile": "tsc",
+        "postinstall": "npm run compile",
         "kill": "taskkill /im node.exe /F",
         "test": "ts-node-dev --inspect --clear --respawn --transpileOnly ./src/app.ts"
     },
