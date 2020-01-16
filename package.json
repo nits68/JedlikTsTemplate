@@ -42,7 +42,9 @@
         "typescript": "^3.7.4"
     },
     "jest": {
-        "roots": ["<rootDir>/src"],
+        "roots": [
+            "<rootDir>/src"
+        ],
         "preset": "ts-jest",
         "verbose": true,
         "testEnvironment": "node",
@@ -50,6 +52,13 @@
             "^.+\\.tsx?$": "ts-jest"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json"
+        ],
         "globals": {
             "ts-jest": {
                 "diagnostics": false
