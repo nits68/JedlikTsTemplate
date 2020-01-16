@@ -39,15 +39,15 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
       JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába<br>
       Vagy:<br>
     - Repo klónozása<br>
-      Parancssor  -> cd a projekt szülőmappája<br>
+      Parancssor (cmd.exe)-> cd a projekt szülőmappája<br>
       "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
       Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git mappát!
-2.  JedlikTsTemplate mappa átnevezése tetszőlegesen, ha új projektet készítünk<br>
+2.  Parancssorból (cmd.exe) belépés a JedlikTsTemplate mappába a "cd JedlikTsTemplate" paranccsal
+3.  Node.js lokális modul(ok) telepítése az "npm i" parancs futtatásával<br>
+    (lsd.: package.json dependencies, devDependencies)
+4.  JedlikTsTemplate mappa átnevezése tetszőlegesen, ha új projektet készítünk<br>
     Klónozott vagy átnevezett mappa helyi menüből: Open with Code,<br>
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása<br>
-3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö<br>
-    Node.js lokális modul(ok) telepítése:<br>
-    terminál ablakból "npm i" parancs futtatása (lsd.: package.json dependencies, devDependencies)
 
 ## C.  Fejlesztés, tesztelés, kilépés, KILL
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
