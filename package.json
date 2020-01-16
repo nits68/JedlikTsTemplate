@@ -19,7 +19,7 @@
         "compile": "tsc",
         "postinstall": "npm run compile",
         "kill": "taskkill /im node.exe /F",
-        "test": "ts-node-dev --inspect --clear --respawn --transpileOnly ./src/app.ts"
+        "ts": "ts-node-dev --inspect --clear --respawn --transpileOnly ./src/app.ts"
     },
     "author": "Nits László",
     "license": "MIT",
