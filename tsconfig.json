@@ -1,31 +1,24 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "es5",
         "strict": true,
         "pretty": true,
         "removeComments": true,
         "experimentalDecorators": true,
         "esModuleInterop": true,
         "module": "CommonJS",
+        "lib": ["es2015"],
         "emitDecoratorMetadata": true,
         "moduleResolution": "node",
         "importHelpers": true,
+        "declaration": true,
         "sourceMap": true,
         "watch": false,
         "outDir": "dist",
-        "types": [
-            "node"
-        ],
-        "typeRoots": [
-            "node_modules/@types"
-        ],
+        "types": ["node", "jest"],
+        "rootDir": "./src",
+        "typeRoots": ["node_modules/@types"]
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules/**/*",
-        "dist/**/*",
-        "**/node_modules/*"
-    ]
+    "exclude": ["node_modules", "src/**/*.spec.ts"],
+    "include": ["src/**/*.ts"]
 }

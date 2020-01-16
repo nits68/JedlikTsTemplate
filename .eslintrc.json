@@ -1,10 +1,32 @@
 {
+    "env": {
+        "node": true,
+        "es6": true
+    },
     "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
     "extends": ["plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint", "plugin:prettier/recommended"],
+    "globals": {
+        "Atomics": "readonly",
+        "jest": true,
+        "SharedArrayBuffer": "readonly"
+    },
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
-    "rules": {}
+    "overrides": [
+        {
+            "files": ["**/__tests__/*.{j,t}s?(x)", "**/tests/unit/**/*.spec.{j,t}s?(x)"],
+            "env": {
+                "jest": true
+            }
+        }
+    ],
+    "rules": {
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "unicode-bom": ["error", "never"]
+    }
 }
