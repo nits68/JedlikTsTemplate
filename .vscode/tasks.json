@@ -17,6 +17,9 @@
             "group": {
                 "kind": "test",
                 "isDefault": true
+            },
+            "presentation": {
+                "focus": true
             }
         }
     ]

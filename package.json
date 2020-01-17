@@ -20,7 +20,7 @@
         "postinstall": "npm run compile",
         "kill": "taskkill /im node.exe /F",
         "ts": "ts-node-dev --inspect --clear --respawn --transpileOnly ./src/app.ts",
-        "test": "jest"
+        "test": "jest || ECHO."
     },
     "author": "Nits László",
     "license": "MIT",
