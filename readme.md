@@ -53,18 +53,16 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
     Project mappa helyi menüből: Open with Code, vagy<br>
     VSCode indítása után File/Open Folder... menü pontba a project mappa megnyitása
-2.  Ctrl-Shift-B => TypeScript forrás átalakítása JavaScript-re<br>
-    (app.ts => app.js, "npm run compile" parancsot futtatja)<br>
-    (amig aktív a task, addig nem kell (lehet) újraindítani)
-3.  Ctrl-Shift-T => ts-node-dev indítása (TypeScript állományokat futtat)<br>
-    ("npm run test" parancsot futtatja)<br>
-    (amig aktív a task, addig nem kell (lehet) újraindítani)<br>
+2.  Ctrl-Shift-B => TypeScript forrás fordítása<br>
+    ("npm run ts" parancsot futtatja)<br>
+    (amig aktív a task, addig nem kell újraindítani)
+3.  Ctrl-Shift-T, vagy "npm run test" Jest tesztet futtatja<br>
 4.  content.ts szerkesztése
-5.  Futtatás: Chrome: http://localhost:8080/<br>
+5.  Program output ellenőrzése böngészőben: http://localhost:8080/<br>
     A ts-node-dev változás esetén újraindul, a böngészőt F5-el (böngészőben) frissíteni kell!<br>
-    Automatikus böngésző frissítés: lsd.: I. pont -> LiveReload<br>
+    Opcionális automatikus böngésző frissítés: lsd.: I. pont -> LiveReload<br>
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):<br>
-    VS Code-ban F5 -el (elhelyezett töréspontoknál megáll, változók vizsgálata)
+    VS Code-ban F5 -el indítjuk (elhelyezett töréspontoknál megáll, változók vizsgálata, lépésenkénti végrehajtás)
 
 ## D. Verziók és telepített node.js csomagok lekérdezése terminálablakból:
 - TypeScript: tsc -v

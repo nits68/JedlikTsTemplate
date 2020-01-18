@@ -13,7 +13,7 @@
         "moduleResolution": "node",
         "importHelpers": true,
         "declaration": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "watch": false,
         "outDir": "dist",
         "types": ["node", "jest"],

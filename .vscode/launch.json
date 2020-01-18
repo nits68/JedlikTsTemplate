@@ -2,11 +2,16 @@
     "version": "2.0.0",
     "configurations": [
         {
-            "name": "Attach to node",
+            "name": "Attach to ts-node-dev",
             "type": "node",
             "request": "attach",
             "restart": true,
-            "port": 9229
+            "sourceMaps": true,
+            "port": 9229,
+            "skipFiles": [
+                "${workspaceFolder}/server/node_modules/**",
+                "<node_internals>/**"
+            ]
         }
     ]
 }

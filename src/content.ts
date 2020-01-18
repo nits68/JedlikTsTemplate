@@ -22,7 +22,7 @@ export default class Content {
 
         // Kezd a kódolást innen -->
 
-        res.write("Egyszerű Hello World!\n");
+        res.write("Egyszerű Hello World! éáőúűóüö\n");
 
         // Tetszőleges html teg-ek beépítése:
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World'</i></span>\n");
