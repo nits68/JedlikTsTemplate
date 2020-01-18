@@ -19,7 +19,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "npm Intellisense" (opcionális)
      - "Prettier" (fontos, kell)
      - "Spell Right" (helyesírás ellenőrzés) (opcionális)
-     - vscode-pdf (opcionális)
+     - "vscode-pdf" (opcionális)
      - további kiterjesztések telepítése igény szerint
 5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
