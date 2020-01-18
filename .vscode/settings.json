@@ -36,5 +36,5 @@
     },
     "spellright.notificationClass": "information",
     "spellright.language": ["en", "hu"],
-    "spellright.documentTypes": ["latex", "plaintext"],
+    "spellright.documentTypes": ["latex", "plaintext"]
 }
