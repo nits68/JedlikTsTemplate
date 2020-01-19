@@ -13,8 +13,7 @@
         "moduleResolution": "node",
         "importHelpers": true,
         "declaration": true,
-        "sourceMap": false,
-        "watch": false,
+        "sourceMap": true,
         "outDir": "dist",
         "types": ["node", "jest"],
         "rootDir": "./src",
@@ -23,4 +22,3 @@
     "exclude": ["node_modules"],
     "include": ["src/**/*.ts", "**/test/**/*.ts"]
 }
-

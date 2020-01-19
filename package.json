@@ -13,14 +13,14 @@
         "url": "https://github.com/nitslaszlo/JedlikTsTemplate"
     },
     "scripts": {
-        "start": "node ./dist/app.js",
-        "start-debug": "node --debug=5858 ./dist/app.js",
-        "install:nodemodules": "npm install",
+        "install": "npm install",
         "compile": "tsc",
+        "compile:watch": "tsc --watch",
         "postinstall": "npm run compile",
         "kill": "taskkill /im node.exe /F",
-        "ts": "ts-node-dev --inspect --clear --respawn --transpileOnly ./src/app.ts",
-        "test": "jest || ECHO."
+        "test": "jest || ECHO.",
+        "nodemon": "nodemon --inspect -q ./dist/app.js",
+        "start": "concurrently  --raw --kill-others \"npm run compile:watch\" \"npm run nodemon\""
     },
     "author": "Nits László",
     "license": "MIT",
@@ -32,14 +32,15 @@
         "@types/node": "^13.1.8",
         "@typescript-eslint/eslint-plugin": "^2.16.0",
         "@typescript-eslint/parser": "^2.16.0",
+        "concurrently": "^5.0.2",
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.9.0",
         "eslint-plugin-prettier": "^3.1.2",
         "jest": "^24.9.0",
+        "nodemon": "^2.0.2",
         "prettier": "^1.19.1",
         "ts-jest": "^24.3.0",
-        "ts-node-dev": "^1.0.0-pre.44",
-        "typescript": "^3.7.5"
+        "typescript": "^3.7.4"
     },
     "jest": {
         "roots": [
