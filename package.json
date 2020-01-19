@@ -13,13 +13,14 @@
         "url": "https://github.com/nitslaszlo/JedlikTsTemplate"
     },
     "scripts": {
+        "start": "node ./dist/app.js",
         "compile": "tsc",
         "compile:watch": "tsc --watch",
         "postinstall": "npm run compile",
         "kill": "taskkill /im node.exe /F",
         "test": "jest || ECHO.",
         "nodemon": "nodemon --inspect -q ./dist/app.js",
-        "start": "concurrently  --raw --kill-others \"npm run compile:watch\" \"npm run nodemon\""
+        "dev": "concurrently  --raw --kill-others \"npm run compile:watch\" \"npm run nodemon\""
     },
     "author": "Nits László",
     "license": "MIT",
