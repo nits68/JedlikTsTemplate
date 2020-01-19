@@ -25,7 +25,7 @@ export default class Content {
         res.write("Egyszerű Hello World!\n");
 
         // Tetszőleges html teg-ek beépítése:
-        res.write("<span style='color: blue;'><i>Színes és dőlt Hello World'</i></span>\n");
+        res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
 
         // Egyszerű input JSON állományból:
         const input: InputInterface = JSON.parse(fs.readFileSync("input.json", "utf-8"));
