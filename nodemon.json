@@ -1,0 +1,9 @@
+{
+  "signal": "SIGHUP",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "watch": ["input.json", "favicon.ico", "forras.txt", "src/"],
+  "ext": "ts, js, txt, json, ico",
+  "exec": "tsc && node --inspect ./dist/app.js"
+}
