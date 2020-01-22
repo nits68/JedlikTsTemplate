@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "ESNext",
         "strict": true,
         "pretty": true,
         "removeComments": true,
