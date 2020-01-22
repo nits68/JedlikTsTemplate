@@ -20,7 +20,7 @@ export default class Content {
         res.write("<!DOCTYPE html>");
         res.write("<html lang='hu'>");
         res.write("<head>");
-        res.write("<style>input, pre {font-family:monospace; font-weight:bold;}</style>");
+        res.write("<style>input, pre {font-family:monospace; font-size:1em; font-weight:bold;}</style>");
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
         res.write("<title>JedlikTsTemplate</title>");
         res.write("</head>");
