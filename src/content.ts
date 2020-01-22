@@ -15,6 +15,7 @@ export default class Content {
             fs.createReadStream("favicon.ico").pipe(res);
             return;
         }
+        // Weboldal inicializálása + head rész:
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.write("<!DOCTYPE html>");
         res.write("<html lang='hu'>");
@@ -56,8 +57,7 @@ export default class Content {
 
         // <---- Fejezd be a kódolást
 
-        res.write("</pre></form></body>");
-        res.write("</html>");
+        res.write("</pre></form></body></html>");
         res.end();
     }
 }
