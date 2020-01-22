@@ -19,7 +19,7 @@ export default class Content {
         res.write("<!DOCTYPE html>");
         res.write("<html lang='hu'>");
         res.write("<head>");
-        res.write("<style>input, pre {font-size:18px; font-family:monospace; font-weight:bold;}</style>");
+        res.write("<style>input, pre {font-size:1em; font-family:monospace; font-weight:bold;}</style>");
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
         res.write("<title>JedlikTsTemplate</title>");
         res.write("</head>");
@@ -44,11 +44,11 @@ export default class Content {
         res.write(`2. feladat: ${input.name} neme: ${neme}\n`);
 
         // Input form-al és <input type='number'>-el:
-        // URL paraméter(ek) (itt kor) ellenőrzése,  kiolvasása:
+        // URL paraméter(ek) (itt kor) ellenőrzése,  kiolvasása, alapértelmezett értéke 18:
         const u: url.UrlWithParsedQuery = url.parse(req.url as string, true);
         // ha "kor" paraméter nincs megadva vagy "kor" paraméter üres string,
         // akkor legyen 18 az értéke, egyébként konvertáljuk számra a "kor" paraméter értékét:
-        // let kor: number = u.query.kor === undefined || u.query.kor === "" ? 3 : parseInt(u.query.kor as string);
+        // let kor: number = u.query.kor === undefined || u.query.kor === "" ? 18 : parseInt(u.query.kor as string);
         let kor: number = parseInt(u.query.kor as string);
         if (!kor || kor < 1 || kor > 99) kor = 18; // egy kis ellenőrzés (!kor kifejezés -> NaN értéknél true)
         res.write(`3. feladat: Kérem a korod [1-99]: <input type='number' name='kor' value=${kor} onChange='this.form.submit()'>\n`);
