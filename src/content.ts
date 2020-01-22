@@ -1,5 +1,6 @@
 ﻿import fs from "fs";
 import http from "http";
+import url from "url";
 
 interface InputInterface {
     name: string;
@@ -17,8 +18,11 @@ export default class Content {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.write("<!DOCTYPE html>");
         res.write("<html lang='hu'>");
-        res.write("<head><title>JedlikTsTemplate</title></head>");
-        res.write("<body><pre style='font-size:18px;font-weight:bold;'>");
+        res.write("<head>");
+        res.write("<title>JedlikTsTemplate</title>");
+        res.write("<style>input, pre {font-size:1.3vw; font-family:monospace; font-weight:bold;}</style>");
+        res.write("</head>");
+        res.write("<body><form><pre>");
 
         // Kezd a kódolást innen -->
 
@@ -38,9 +42,18 @@ export default class Content {
         neme = input.male ? "férfi" : "nő";
         res.write(`2. feladat: ${input.name} neme: ${neme}\n`);
 
+        // Input form-al és <input type='number'>-el:
+        // URL paraméterek (fordulo) ellenőrzése,  kiolvasása:
+        const u: url.UrlWithParsedQuery = url.parse(req.url as string, true);
+        // ha "kor" paraméter nincs megadva vagy "kor" paraméter üres string,
+        // akkor legyen 18 az értéke, egyébként konvertáljuk számra a "kor" paraméter értékét:
+        let kor: number = u.query.kor === undefined || u.query.kor === "" ? 3 : parseInt(u.query.kor as string);
+        if (!kor || kor < 1 || kor > 99) kor = 18;
+        res.write(`3. feladat: Kérem a korod [1-99]: <input type='number' name='kor' value=${kor} onChange='this.form.submit()'>\n`);
+
         // <---- Fejezd be a kodolást
 
-        res.write("</pre></body>");
+        res.write("</pre></form></body>");
         res.write("</html>");
         res.end();
     }
