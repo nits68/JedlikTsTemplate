@@ -52,7 +52,7 @@ export default class Content {
         // let kor: number = u.query.kor === undefined || u.query.kor === "" ? 18 : parseInt(u.query.kor as string);
         let kor: number = parseInt(u.query.kor as string);
         if (!kor || kor < 1 || kor > 99) kor = 18; // egy kis ellenőrzés (!kor kifejezés -> NaN értéknél true)
-        res.write(`3. feladat: Kérem a korod [1-99]: <input type='number' name='kor' value=${kor} style='width:3em;' onChange='this.form.submit()'>\n`);
+        res.write(`3. feladat: Kérem a korod [1-99]: <input type='text' name='kor' value=${kor} style='width:3em;' onchange='this.form.submit()'>\n`);
         res.write(`4. feladat: Te ${kor} éves vagy!\n`);
 
         // <---- Fejezd be a kódolást
