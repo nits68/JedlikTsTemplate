@@ -5,7 +5,7 @@
     "tasks": [
         {
             "type": "npm",
-            "script": "compile:watch",
+            "script": "dev",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -13,7 +13,7 @@
         },
         {
             "type": "npm",
-            "script": "dev",
+            "script": "test",
             "group": {
                 "kind": "test",
                 "isDefault": true
