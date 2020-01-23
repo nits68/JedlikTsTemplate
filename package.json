@@ -15,6 +15,7 @@
     "scripts": {
         "start": "node ./dist/app.js",
         "compile": "tsc",
+        "compile:watch": "tsc --watch",
         "postinstall": "tsc",
         "kill": "taskkill /im node.exe /F",
         "test": "jest || ECHO.",
