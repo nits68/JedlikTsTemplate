@@ -49,7 +49,7 @@ export default class Content {
         const u = url.parse(req.url as string, true).query;
         // ha "kor" paraméter nincs megadva vagy "kor" paraméter üres string,
         // akkor legyen 18 az értéke, egyébként konvertáljuk számra a "kor" paraméter értékét:
-        // let kor: number = u.query.kor === undefined || u.query.kor === "" ? 18 : parseInt(u.query.kor as string);
+        // let kor: number = u.kor === undefined || u.kor === "" ? 18 : parseInt(u.kor as string);
         let kor: number = parseInt(u.kor as string);
         if (!kor || kor < 1 || kor > 99) kor = 18; // egy kis ellenőrzés (!kor kifejezés -> NaN értéknél true)
         res.write(`3. feladat: Kérem a korod [1-99]: <input type='text' name='kor' value=${kor} style='width:3em;' onchange='this.form.submit()'>\n`);
