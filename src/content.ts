@@ -30,7 +30,7 @@ export default class Content {
 
         res.write("Egyszerű Hello World!\n");
 
-        // Tetszőleges html teg-ek és attributumok beépítése:
+        // Tetszőleges html teg-ek és attribútumok beépítése:
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
 
         // Egyszerű input JSON állományból:
