@@ -51,8 +51,8 @@ export default class Content {
         // akkor legyen 18 az értéke, egyébként konvertáljuk számra a "kor" paraméter értékét:
         // let kor: number = u.kor === undefined || u.kor === "" ? 18 : parseInt(u.kor as string);
         let kor: number = parseInt(u.kor as string);
-        if (!kor || kor < 1 || kor > 99) kor = 18; // egy kis ellenőrzés (!kor kifejezés -> NaN értéknél true)
-        res.write(`3. feladat: Kérem a korod [1-99]: <input type='text' name='kor' value=${kor} style='width:3em;'>\n`);
+        if (isNaN(kor) || kor < 0 || kor > 99) kor = 18; // egy kis ellenőrzés
+        res.write(`3. feladat: Kérem a korod [0-99]: <input type='text' name='kor' value=${kor} style='width:3em;'>\n`);
         res.write(`4. feladat: Te ${kor} éves vagy!\n`);
 
         // <---- Fejezd be a kódolást
