@@ -2,10 +2,22 @@
     "version": "2.0.0",
     "configurations": [
         {
+            "name": "Debug Jest Tests",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "args": ["--inspect-brk", "${workspaceRoot}/node_modules/.bin/jest", "--runInBand"],
+            "windows": {
+                "args": ["--inspect-brk", "${workspaceRoot}/node_modules/jest/bin/jest.js", "--runInBand"]
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
             "name": "Attach to node",
             "type": "node",
             "request": "attach",
-            "restart": true,
+            "restart": false,
             "port": 9229,
             "skipFiles": ["${workspaceFolder}/server/node_modules/**", "<node_internals>/**"]
         }

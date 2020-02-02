@@ -1,6 +1,6 @@
 {
     "semi": true,
-    "printWidth": 190,
+    "printWidth": 999,
     "tabWidth": 4,
     "eslintIntegration": true,
     "stylelintIntegration": false
