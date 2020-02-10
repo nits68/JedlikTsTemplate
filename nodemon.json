@@ -6,5 +6,5 @@
   "watch": ["input.json", "favicon.ico", "forras.txt", "src/"],
   "ext": "ts, js, txt, json, ico",
   "delay": 0,
-  "exec": "tsc && node --inspect ./dist/app.js || exit 1"
+  "exec": "tsc && node --inspect ./dist/App.js || exit 1"
 }
