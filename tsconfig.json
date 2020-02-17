@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "module": "esnext",
+        "target": "es2020",
         "strict": true,
         "pretty": true,
         "removeComments": true,
         "downlevelIteration": true,
         "experimentalDecorators": true,
         "esModuleInterop": true,
-        "module": "CommonJS",
         "lib": ["es2015"],
         "emitDecoratorMetadata": true,
         "moduleResolution": "node",
