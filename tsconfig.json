@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
+        "target": "esnext",
         "strict": true,
         "pretty": true,
         "removeComments": true,
         "downlevelIteration": true,
         "experimentalDecorators": true,
         "esModuleInterop": true,
+        "module": "CommonJS",
         "lib": ["es2016"],
         "emitDecoratorMetadata": true,
         "moduleResolution": "node",
