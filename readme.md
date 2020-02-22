@@ -13,6 +13,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 4.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
     Kiterjesztés keresése, telepítés:<br>
      - "Debugger for Chrome" (fontos, kell)
+     - "EasyZoom" (opcionális, nagyítás Ctrl-görgő)
      - "ESLint" (fontos, kell)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
      - "npm" (opcionális)
