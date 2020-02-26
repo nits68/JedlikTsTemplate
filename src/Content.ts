@@ -45,7 +45,7 @@ export default class Content {
         res.write(`2. feladat: ${input.name} neme: ${neme}\n`);
 
         // Input form-al és <input type='number'>-el:
-        // URL paraméter(ek) (itt kor) ellenőrzése,  kiolvasása, alapértelmezett értéke 18:
+        // URL paraméter(ek) (itt "kor") ellenőrzése,  kiolvasása, alapértelmezett értéke 18:
         const u = url.parse(req.url as string, true).query;
         // ha "kor" paraméter nincs megadva vagy "kor" paraméter üres string,
         // akkor legyen 18 az értéke, egyébként konvertáljuk számra a "kor" paraméter értékét:
