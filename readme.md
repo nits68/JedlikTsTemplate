@@ -1,4 +1,4 @@
-#  VS Code + TypeScript + Node.js + GitHub + Heroku
+#  VS Code + TypeScript + Node.js + Jest + GitHub + Heroku
 
 ## Heroku teszt:
 https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
@@ -12,15 +12,15 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     https://code.visualstudio.com/Download
 4.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
     Kiterjesztés keresése, telepítés:<br>
-     - "Debugger for Chrome" (fontos, kell)
+     - "Debugger for Chrome" (nyomkövetéshez - fontos, kell)
      - "EasyZoom" (opcionális, nagyítás Ctrl-görgő)
-     - "ESLint" (fontos, kell)
+     - "ESLint" (linter - fontos, kell)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
-     - "npm" (opcionális)
-     - "npm Intellisense" (opcionális)
-     - "Prettier" (fontos, kell)
-     - "Spell Right" (helyesírás ellenőrzés) (opcionális)
-     - "vscode-pdf" (opcionális)
+     - "npm" (node modulok ellenőrzője - opcionális, ajánlott)
+     - "npm Intellisense" (opcionális, ajánlott)
+     - "Prettier" (kód formázó - fontos, kell)
+     - "Spell Right" (helyesírás ellenőrzés) (opcionális, ajánlott)
+     - "vscode-pdf" (pdf olvasó, opcionális)
      - további kiterjesztések telepítése igény szerint
 5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
@@ -42,10 +42,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     - Repo klónozása<br>
       Parancssor (cmd.exe)-> cd a projekt szülőmappája<br>
       "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
-      Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git mappát!
+      Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git rejtett mappát!
 2.  Parancssorból (cmd.exe) belépés a JedlikTsTemplate mappába a "cd JedlikTsTemplate" paranccsal
 3.  Node.js lokális modul(ok) telepítése az "npm i" parancs futtatásával<br>
-    (lsd.: package.json dependencies, devDependencies)
+    (lsd.: package.json: dependencies, devDependencies)
 4.  JedlikTsTemplate mappa átnevezése tetszőlegesen, ha új projektet készítünk<br>
     Klónozott vagy átnevezett mappa helyi menüből: Open with Code,<br>
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása<br>
@@ -54,13 +54,13 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
     Project mappa helyi menüből: Open with Code, vagy<br>
     VSCode indítása után File/Open Folder... menü pontba a project mappa megnyitása
-2.  Ctrl-Shift-B => TypeScript forrás fordítása<br>
-    ("npm run dev" parancsot futtatja)<br>
+2.  Ctrl-Shift-B => TypeScript forrás fordítása (tsc) és a lefordított JavaScript futtatása (node-al)<br>
+    (Az "npm run dev" parancsot futtatja)<br>
     (amig aktív a task, addig nem kell újraindítani)
-3.  Ctrl-Shift-T, vagy "npm run test" Jest tesztet futtatja<br>
+3.  Ctrl-Shift-T, vagy "npm run test" a Jest tesztet futtatja<br>
 4.  content.ts szerkesztése
 5.  Program output ellenőrzése böngészőben: http://localhost:8080/<br>
-    A ts-node-dev változás esetén újraindul, a böngészőt F5-el (böngészőben) frissíteni kell!<br>
+    A nodemon változás esetén újraindítja a fordítást és futtatást, a böngészőt F5-el (böngészőben) frissíteni kell!<br>
     Opcionális automatikus böngésző frissítés: lsd.: I. pont -> LiveReload<br>
     Nyomkövetés (beépített debugger és Chrome összekapcsolása):<br>
     VS Code-ban F5 -el indítjuk az összekapcsolást<br>
