@@ -4,7 +4,7 @@
 https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 
 ## A.  Fejlesztői környezet telepítése, beállítása
-1.  Node.js letöltése, telepítése (Node.js V12.x.x vagy V13.x.x javasolt!) <br>
+1.  Node.js letöltése, telepítése (Node.js V13.x.x javasolt!)<br>
     https://nodejs.org/en/download/
 2.  Git for windows telepítése<br>
     https://git-for-windows.github.io/
@@ -12,6 +12,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     https://code.visualstudio.com/Download
 4.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
     Kiterjesztés keresése, telepítés:<br>
+     - "Add jsdoc comments" (opcionális, jsdoc rendszerű dokumentáció készítéséhez)
      - "Debugger for Chrome" (nyomkövetéshez - fontos, kell)
      - "EasyZoom" (opcionális, nagyítás Ctrl-görgő)
      - "ESLint" (linter - fontos, kell)
@@ -50,7 +51,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Klónozott vagy átnevezett mappa helyi menüből: Open with Code,<br>
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása<br>
 
-## C.  Fejlesztés, tesztelés, kilépés, KILL
+## C.  Fejlesztés, tesztelés, kilépés
 1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy<br>
     Project mappa helyi menüből: Open with Code, vagy<br>
     VSCode indítása után File/Open Folder... menü pontba a project mappa megnyitása
@@ -71,14 +72,14 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 - Node.js: node -v
 - git: git --version
 - npm: npm -v
-- telepített globális csomagok: npm -g ls --depth=0
-- telepített lokális csomagok: npm ls --depth=0
+- telepített Node.js globális csomagok: npm -g ls --depth=0
+- telepített Node.js lokális csomagok: npm ls --depth=0
 
 ## E. Komponensek frissítése<br>
 - VSCode: Automatikus, balra lent a fogaskeréken jelzi, ha új verzió jön ki
 - VSCode kiterjesztések: Automatikus, balra az Extensions ikon jelzi, ha új verzió jön ki
-- TypeScript: npm update -g typescript
-- Node.js: npm install --save-dev @types/node
+- Node.js típusdefiníciós állományok: npm i --save-dev @types/node
+- npm csomagkezelő: npm i -g npm
 
 ## F. Hasznos linkek:
 - https://www.typescriptlang.org/docs/home.html
