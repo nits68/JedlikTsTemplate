@@ -10,8 +10,8 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     https://git-for-windows.github.io/
 3.  Visual Studio Code - User Installer (továbbiakban VSCode) telepítése<br>
     https://code.visualstudio.com/Download
-4.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X<br>
-    Kiterjesztés keresése, telepítés:<br>
+4.  VSCode futtatása, Visual Studio Extensions (bővítmények) telepítése: Ctrl-Shift-X<br>
+    Bővítmények keresése, telepítés:<br>
      - "Add jsdoc comments" (opcionális, jsdoc rendszerű dokumentáció készítéséhez)
      - "Debugger for Chrome" (nyomkövetéshez - fontos, kell)
      - "EasyZoom" (opcionális, nagyítás Ctrl-görgő)
@@ -22,7 +22,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "Prettier" (kód formázó - fontos, kell)
      - "Spell Right" (helyesírás ellenőrzés) (opcionális, ajánlott)
      - "vscode-pdf" (pdf olvasó, opcionális)
-     - további kiterjesztések telepítése igény szerint
+     - további bővítmények telepítése igény szerint
 5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
