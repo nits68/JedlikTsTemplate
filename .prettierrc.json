@@ -3,5 +3,6 @@
     "printWidth": 999,
     "tabWidth": 4,
     "eslintIntegration": true,
-    "stylelintIntegration": false
+    "stylelintIntegration": false,
+    "endOfLine": "auto"
 }
