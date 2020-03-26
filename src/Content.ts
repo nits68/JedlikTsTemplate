@@ -20,9 +20,8 @@ export default class Content {
         res.write("<title>Jedlik Ts Template</title>");
         res.write("</head>");
         res.write("<body><form><pre>");
-        // URL paraméter(ek) elérése:
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const params = url.parse(req.url as string, true).query;
-        // Ha nincsenek paraméterek, akkor tedd megjegyzésbe a fenti sort!
 
         // Kezd a kódolást innen -->
 
@@ -32,11 +31,12 @@ export default class Content {
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
 
         // Próbáljuk számra konvertálni a "kor" paraméter (http://localhost:8080/?kor=16) értékét:
-        const korod: number = parseInt(params.kor as string);
+        let korod: number = parseInt(params.kor as string);
         // Ha nincs "kor" paraméter megadva, vagy nem lehet számra konvertálni értékét,
-        // akkor a "korod" változóba NaN érték kerül
+        // akkor a "korod" változóba NaN érték kerül, ilyenkor legyen 18 év az értéke:
+        if (isNaN(korod)) korod = 18;
 
-        res.write(`Kérem a korod: <input type='text' name='kor' value=${korod} style='width:3em;' onChange='this.form.submit();'>\n`);
+        res.write(`Kérem a korod: <input type='number' name='kor' value=${korod} style='width:3em;' onChange='this.form.submit();'>\n`);
         res.write(`Te ${korod} éves vagy!\n`);
 
         // <---- Fejezd be a kódolást
