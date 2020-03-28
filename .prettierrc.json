@@ -4,5 +4,6 @@
     "tabWidth": 4,
     "eslintIntegration": true,
     "stylelintIntegration": false,
-    "endOfLine": "auto"
+    "endOfLine": "auto",
+    "arrowParens": "avoid"
 }

@@ -27,6 +27,7 @@
     "rules": {
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
-        "unicode-bom": ["error", "never"]
+        "unicode-bom": ["error", "never"],
+        "arrow-parens": ["error", "as-needed"]
     }
 }
