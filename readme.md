@@ -82,9 +82,10 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 - npm csomagkezelő: npm i -g npm
 
 ## F. Hasznos linkek:
+- https://www.tutorialsteacher.com/typescript/
 - https://www.typescriptlang.org/docs/home.html
 - https://www.tutorialspoint.com/typescript/
-- https://www.typescriptlang.org/docs/handbook/basic-types.html
+- https://github.com/labs42io/clean-code-typescript
 - https://code.visualstudio.com/docs
 - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 - https://git-scm.com/book/en/v2
