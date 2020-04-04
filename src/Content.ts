@@ -18,6 +18,7 @@ export default class Content {
         res.write("<style>input, pre {font-family:monospace; font-size:1em; font-weight:bold;}</style>");
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
 
+        // Material Design Bootstrap súgó: https://mdbootstrap.com/
         // Font Awesome:
         res.write("<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>");
         // Google Fonts:
