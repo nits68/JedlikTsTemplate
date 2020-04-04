@@ -30,7 +30,7 @@ export default class Content {
 
         res.write("<title>Jedlik Ts Template</title>");
         res.write("</head>");
-        res.write("<body><form><pre>");
+        res.write("<body><form><pre class='m-3'>");
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const params = url.parse(req.url as string, true).query;
 
