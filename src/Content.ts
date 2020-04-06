@@ -50,7 +50,12 @@ export default class Content {
         res.write(`Te ${korod} éves vagy!\n`);
 
         res.write("Material Design for Bootstrap input demo:");
-        res.write("<div class='md-form'><i class='fas fa-envelope prefix'></i><input type='text' id='inputIconEx1' style='max-width:300px;' class='form-control'><label for='inputIconEx1'>E-mail cím</label></div>");
+        let email: string = params.email as string;
+        if (!email) email = "";
+        res.write("<div class='md-form  md-outline'><i class='fas fa-envelope prefix'></i>");
+        res.write(`<input type='text' name='email' id='email'  style='max-width:300px;' class='form-control' value='${email}' onChange='this.form.submit();'>`);
+        res.write("<label for='email'>E-mail cím</label></div>");
+        res.write(`Te e-mail címed: ${email}\n`);
 
         // <---- Fejezd be a kódolást
 
