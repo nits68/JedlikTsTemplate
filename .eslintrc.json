@@ -25,9 +25,12 @@
         }
     ],
     "rules": {
+        "prettier/prettier": "error",
+        "no-return-assign": "off",
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
         "unicode-bom": ["error", "never"],
-        "arrow-parens": ["error", "as-needed"]
+        "arrow-parens": ["error", "as-needed"],
+        "@typescript-eslint/no-inferrable-types": "off"
     }
 }
