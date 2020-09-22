@@ -14,7 +14,6 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     Bővítmények keresése, telepítés:<br>
      - "Add jsdoc comments" (opcionális, jsdoc rendszerű dokumentáció készítéséhez)
      - "Debugger for Chrome" (nyomkövetéshez - fontos, kell)
-     - "EasyZoom" (opcionális, nagyítás Ctrl-görgő)
      - "ESLint" (linter - fontos, kell)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
      - "npm" (node modulok ellenőrzője - opcionális, ajánlott)
