@@ -4,7 +4,7 @@
 https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 
 ## A.  Fejlesztői környezet telepítése, beállítása
-1.  Node.js letöltése, telepítése (Node.js V13.x.x javasolt!)<br>
+1.  Node.js letöltése, telepítése (Node.js V14.9.0 javasolt!)<br>
     https://nodejs.org/en/download/
 2.  Git for windows telepítése<br>
     https://git-for-windows.github.io/

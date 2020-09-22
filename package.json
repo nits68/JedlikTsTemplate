@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Jedlik project template for using TypeScript, Jest and Node.js in VS Code.",
     "engines": {
-        "node": "13.x"
+        "node": "14.x"
     },
     "main": "App.js",
     "repository": {
