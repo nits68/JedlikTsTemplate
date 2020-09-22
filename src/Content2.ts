@@ -2,7 +2,7 @@
 import http from "http";
 import url from "url";
 
-export default class Content {
+export default class Content2 {
     public content(req: http.IncomingMessage, res: http.ServerResponse): void {
         // favicon.ico kérés kiszolgálása:
         if (req.url === "/favicon.ico") {
