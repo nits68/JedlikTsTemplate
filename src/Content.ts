@@ -38,6 +38,7 @@ export default class Content {
 
         res.write(`Kérem a korod: <input type='number' name='kor' value=${korod} style='max-width:100px;' onChange='this.form.submit();'>\n`);
         res.write(`Te ${korod} éves vagy!\n`);
+        res.write("alma");
 
         // <---- Fejezd be a kódolást
 
