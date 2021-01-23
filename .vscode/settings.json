@@ -1,6 +1,5 @@
 {
     "eslint.alwaysShowStatus": true,
-    "eslint.enable": true,
     "eslint.validate": ["javascript", "typescript"],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -34,7 +33,5 @@
         "**/*.js.map": true,
         "**/*.npmrc": true
     },
-    "spellright.notificationClass": "information",
-    "spellright.language": ["en", "hu"],
-    "spellright.documentTypes": ["latex", "plaintext"]
+    "spellright.notificationClass": "information"
 }

@@ -4,7 +4,7 @@
 https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 
 ## A.  Fejlesztői környezet telepítése, beállítása
-1.  Node.js letöltése, telepítése (Node.js V14.9.0 javasolt!)<br>
+1.  Node.js letöltése, telepítése (Aktuális LTS verzió javasolt!)<br>
     https://nodejs.org/en/download/
 2.  Git for windows telepítése<br>
     https://git-for-windows.github.io/
@@ -15,12 +15,14 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
      - "Add jsdoc comments" (opcionális, jsdoc rendszerű dokumentáció készítéséhez)
      - "Debugger for Chrome" (nyomkövetéshez - fontos, kell)
      - "ESLint" (linter - fontos, kell)
+     - "GitHub Pull Requests and Issues" (Git pull request-ek és feladatok)
      - "GitLens" (extra Git funkciók, opcionális a telepítése)
      - "npm" (node modulok ellenőrzője - opcionális, ajánlott)
      - "npm Intellisense" (opcionális, ajánlott)
      - "Prettier" (kód formázó - fontos, kell)
      - "Spell Right" (helyesírás ellenőrzés) (opcionális, ajánlott)
      - "vscode-pdf" (pdf olvasó, opcionális)
+     - "Visual Studio IntelliCode" (intelligens kódkiegészítő, ajánlott)
      - további bővítmények telepítése igény szerint
 5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
@@ -42,7 +44,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
     - Repo klónozása<br>
       Parancssor (cmd.exe)-> cd a projekt szülőmappája<br>
       "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
-      Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git rejtett mappát!
+    - Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git rejtett mappát!
 2.  Parancssorból (cmd.exe) belépés a JedlikTsTemplate mappába a "cd JedlikTsTemplate" paranccsal
 3.  Node.js lokális modul(ok) telepítése az "npm i" parancs futtatásával<br>
     (lsd.: package.json: dependencies, devDependencies)
