@@ -32,7 +32,7 @@ export default class Content2 {
         res.write("</head>");
         res.write("<body><form><pre class='m-3'>");
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const params = url.parse(req.url as string, true).query;
+        const params = new url.URL(req.url as string, `http://${req.headers.host}/`).searchParams;
 
         // Kezd a kódolást innen -->
         res.write("Egyszerű Hello World!\n");
@@ -41,7 +41,7 @@ export default class Content2 {
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
 
         // Próbáljuk számra konvertálni a "kor" paraméter (http://localhost:8080/?kor=16) értékét:
-        let korod: number = parseInt(params.kor as string);
+        let korod = parseInt(params.get("kor") as string);
         // Ha nincs "kor" paraméter megadva, vagy nem lehet számra konvertálni értékét,
         // akkor a "korod" változóba NaN érték kerül, ilyenkor legyen 18 év az értéke:
         if (isNaN(korod)) korod = 18;
@@ -50,7 +50,7 @@ export default class Content2 {
         res.write(`Te ${korod} éves vagy!\n`);
 
         res.write("Material Design for Bootstrap input demo:");
-        let email: string = params.email as string;
+        let email = params.get("email");
         if (!email) email = "";
         res.write("<div class='md-form  md-outline'><i class='fas fa-envelope prefix'></i>");
         res.write(`<input type='text' name='email' id='email'  style='max-width:300px;' class='form-control' value='${email}' onChange='this.form.submit();'>`);
