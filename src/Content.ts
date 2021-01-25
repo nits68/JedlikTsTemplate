@@ -21,7 +21,9 @@ export default class Content {
         res.write("</head>");
         res.write("<body><form><pre class='m-3'>");
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const params = url.parse(req.url as string, true).query;
+        // const params = url.parse(req.url as string, true).query;
+        const baseURL = "http://" + req.headers.host + "/";
+        const params = new url.URL(req.url as string, baseURL).searchParams;
 
         // Kezd a kódolást innen -->
 
@@ -31,7 +33,8 @@ export default class Content {
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
 
         // Próbáljuk számra konvertálni a "kor" paraméter (http://localhost:8080/?kor=16) értékét:
-        let korod: number = parseInt(params.kor as string);
+        // let korod: number = parseInt(params.kor as string);
+        let korod = parseInt(params.get("kor") as string);
         // Ha nincs "kor" paraméter megadva, vagy nem lehet számra konvertálni értékét,
         // akkor a "korod" változóba NaN érték kerül, ilyenkor legyen 18 év az értéke:
         if (isNaN(korod)) korod = 18;
