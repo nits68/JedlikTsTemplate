@@ -19,7 +19,7 @@ export default class Content {
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
         res.write("<title>Jedlik Ts Template</title>");
         res.write("</head>");
-        res.write("<body><form><pre class='m-3'>");
+        res.write("<body><form><pre>");
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const params = new url.URL(req.url as string, `http://${req.headers.host}/`).searchParams;
 
