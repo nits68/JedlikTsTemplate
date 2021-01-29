@@ -33,6 +33,5 @@
         "**/*.js.map": true,
         "**/*.npmrc": true
     },
-    "spellright.notificationClass": "information",
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "spellright.notificationClass": "information"
 }
