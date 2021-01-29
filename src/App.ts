@@ -4,8 +4,8 @@ import Content from "./Content";
 
 class Program {
     constructor() {
-        http.createServer(new Content().content).listen(process.env.PORT || 8080);
-        // http.createServer(new Content2().content).listen(process.env.PORT || 8080);
+        http.createServer(Content.content).listen(process.env.PORT || 8080);
+        // http.createServer(Content2.content).listen(process.env.PORT || 8080);
     }
 }
 

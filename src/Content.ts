@@ -3,7 +3,7 @@ import http from "http";
 import url from "url";
 
 export default class Content {
-    public content(req: http.IncomingMessage, res: http.ServerResponse): void {
+    public static content(req: http.IncomingMessage, res: http.ServerResponse): void {
         // favicon.ico kérés kiszolgálása:
         if (req.url === "/favicon.ico") {
             res.writeHead(200, { "Content-Type": "image/x-icon" });
