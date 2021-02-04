@@ -27,7 +27,7 @@
     },
     "devDependencies": {
         "@types/jest": "^26.0.20",
-        "@types/node": "^14.14.22",
+        "@types/node": "^14.14.24",
         "@typescript-eslint/eslint-plugin": "^4.14.1",
         "@typescript-eslint/parser": "^4.14.1",
         "eslint": "^7.18.0",
@@ -36,7 +36,7 @@
         "jest": "^26.6.3",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1",
-        "ts-jest": "^26.4.4",
+        "ts-jest": "^26.5.0",
         "typescript": "^4.1.3"
     },
     "jest": {
@@ -47,20 +47,20 @@
         "verbose": true,
         "testEnvironment": "node",
         "transform": {
-            "^.+\\.tsx?$": "ts-jest"
+            "^.+\\.ts$": "ts-jest"
         },
-        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|js)$",
         "moduleFileExtensions": [
             "ts",
-            "tsx",
             "js",
-            "jsx",
-            "json"
+            "json",
+            "node"
         ],
-        "globals": {
-            "ts-jest": {
-                "diagnostics": false
-            }
-        }
+        "collectCoverage": true,
+        "coverageDirectory": "coverage",
+        "collectCoverageFrom": [
+            "src/**/*.{ts,js}",
+            "!src/**/*.d.ts"
+        ]
     }
 }

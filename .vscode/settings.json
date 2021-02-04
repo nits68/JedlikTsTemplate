@@ -33,5 +33,8 @@
         "**/*.js.map": true,
         "**/*.npmrc": true
     },
-    "spellright.notificationClass": "information"
+    "spellright.notificationClass": "information",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
