@@ -41,8 +41,7 @@ export default class Content {
 
         // <---- Fejezd be a kódolást
 
-        res.write("</pre></form>");
-        res.write("</body></html>");
+        res.write("</pre></form></body></html>");
         res.end();
     }
 }
