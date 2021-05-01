@@ -7,7 +7,7 @@
     },
     "main": "App.js",
     "repository": {
-        "private": true,
+        "private": false,
         "type": "git",
         "url": "https://github.com/nitslaszlo/JedlikTsTemplate"
     },
@@ -23,21 +23,21 @@
     "author": "Nits László",
     "license": "MIT",
     "dependencies": {
-        "tslib": "^2.1.0"
+        "tslib": "^2.2.0"
     },
     "devDependencies": {
-        "@types/jest": "^26.0.22",
+        "@types/jest": "^26.0.23",
         "@types/node": "^14.14.36",
-        "@typescript-eslint/eslint-plugin": "^4.19.0",
-        "@typescript-eslint/parser": "^4.19.0",
-        "eslint": "^7.22.0",
-        "eslint-config-prettier": "^8.1.0",
-        "eslint-plugin-prettier": "^3.3.1",
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
+        "eslint": "^7.25.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
         "jest": "^26.6.3",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1",
-        "ts-jest": "^26.5.4",
-        "typescript": "^4.2.3"
+        "ts-jest": "^26.5.5",
+        "typescript": "^4.2.4"
     },
     "jest": {
         "roots": [
