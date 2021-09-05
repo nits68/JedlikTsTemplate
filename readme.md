@@ -83,6 +83,7 @@ https://jedlik-ts-template.herokuapp.com/ (Deploy menete: Deploy_on_Heroku.pdf)
 - npm csomagkezelő: npm i -g npm
 
 ## F. Hasznos linkek:
+- https://www.section.io/engineering-education/how-to-use-typescript-with-nodejs/
 - https://www.tutorialsteacher.com/typescript/
 - https://www.typescriptlang.org/docs/home.html
 - https://www.tutorialspoint.com/typescript/

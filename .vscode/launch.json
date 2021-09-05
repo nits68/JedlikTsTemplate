@@ -2,6 +2,19 @@
     "version": "2.0.0",
     "configurations": [
         {
+            "name": "Debug TypeScript",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "args": ["src/App.ts", "--transpile-only"],
+            "cwd": "${workspaceFolder}",
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": ["<node_internals>/**", "node_modules/**"],
+            "env": {
+              "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json"
+            }
+        },
+        {
             "name": "Attach to node",
             "type": "node",
             "request": "attach",
