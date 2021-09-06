@@ -1,5 +1,8 @@
 module.exports = {
     // https://robertcooper.me/post/using-eslint-and-prettier-in-a-typescript-project
+    // https://eslint.org/docs/rules/
+    // https://github.com/prettier/eslint-plugin-prettier#readme
+    // https://github.com/prettier/eslint-config-prettier
     root: true,
     env: {
         node: true,
@@ -18,8 +21,6 @@ module.exports = {
     ],
     rules: {
         // "space-before-function-paren": ["error", "never"],
-        // "arrow-body-style": "off",
-        // "prefer-arrow-callback": "off",
         // "no-return-assign": "off",
         // "unicode-bom": ["error", "never"],
         // "arrow-parens": ["error", "as-needed"],
