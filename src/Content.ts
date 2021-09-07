@@ -15,6 +15,7 @@ export default class Content {
         res.write("<!DOCTYPE html>");
         res.write("<html lang='hu'>");
         res.write("<head>");
+        res.write("<meta charset='utf-8'>");
         res.write("<style>input, pre {font-family:monospace; font-size:1em; font-weight:bold;}</style>");
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
         res.write("<title>Jedlik Ts Template</title>");
@@ -36,7 +37,7 @@ export default class Content {
         // akkor a "korod" változóba NaN érték kerül, ilyenkor legyen 18 év az értéke:
         if (isNaN(korod)) korod = 18;
 
-        res.write(`Kérem a korod: <input type='number' name='kor' value=${korod} style='max-width:100px;' onChange='this.form.submit();'>\n`);
+        res.write(`<label>Kérem a korod: <input type='number' name='kor' value=${korod} style='max-width:100px;' onChange='this.form.submit();'></label>\n`);
         res.write(`Te ${korod} éves vagy!\n`);
 
         // <---- Fejezd be a kódolást
