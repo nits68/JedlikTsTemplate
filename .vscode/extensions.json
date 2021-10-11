@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "pkief.material-icon-theme",
+        "christian-kohler.npm-intellisense",
+        "eg2.vscode-npm-script",
+        "esbenp.prettier-vscode",
+        "tomoki1207.pdf",
+        "coenraads.bracket-pair-colorizer-2",
+        "formulahendry.auto-rename-tag",
+        "donjayamanne.githistory",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens"
+    ]
+}

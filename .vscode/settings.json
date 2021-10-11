@@ -1,7 +1,9 @@
 {
     "eslint.alwaysShowStatus": true,
     "eslint.validate": [
-        "javascript", "typescript"],
+        "javascript",
+        "typescript"
+    ],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "[javascript]": {
@@ -15,7 +17,6 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "extensions.ignoreRecommendations": true,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -34,10 +35,7 @@
         "**/*.js.map": true,
         "**/*.npmrc": true
     },
-    "spellright.notificationClass": "information",
-    "[json]": {
+    "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "spellright.language": ["hu"],
-    "spellright.documentTypes": ["latex", "plaintext"]
+    }
 }

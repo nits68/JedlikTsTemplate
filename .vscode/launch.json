@@ -4,34 +4,35 @@
         {
             "name": "Debug TypeScript",
             "type": "node",
-            "request": "launch",
-            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
-            "args": ["src/App.ts", "--transpile-only"],
-            "cwd": "${workspaceFolder}",
-            "internalConsoleOptions": "openOnSessionStart",
-            "skipFiles": ["<node_internals>/**", "node_modules/**"],
-            "env": {
-              "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json"
-            }
-        },
-        {
-            "name": "Attach to node",
-            "type": "node",
             "request": "attach",
             "restart": false,
             "port": 9229,
-            "skipFiles": ["${workspaceRoot}/node_modules/**", "<node_internals>/**"]
+            "skipFiles": [
+                "${workspaceRoot}/node_modules/**",
+                "<node_internals>/**"
+            ]
         },
         {
             "name": "Debug Jest Tests",
             "type": "node",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--inspect-brk", "${workspaceRoot}/node_modules/.bin/jest", "--runInBand"],
+            "args": [
+                "--inspect-brk",
+                "${workspaceRoot}/node_modules/.bin/jest",
+                "--runInBand"
+            ],
             "windows": {
-                "args": ["--inspect-brk", "${workspaceRoot}/node_modules/jest/bin/jest.js", "--runInBand"]
+                "args": [
+                    "--inspect-brk",
+                    "${workspaceRoot}/node_modules/jest/bin/jest.js",
+                    "--runInBand"
+                ]
             },
-            "skipFiles": ["${workspaceRoot}/node_modules/**", "<node_internals>/**"],
+            "skipFiles": [
+                "${workspaceRoot}/node_modules/**",
+                "<node_internals>/**"
+            ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"
         }
