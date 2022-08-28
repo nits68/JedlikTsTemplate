@@ -18,15 +18,8 @@ export default class Content2 {
         res.write("<style>input, pre {font-family:monospace; font-size:1em; font-weight:bold;}</style>");
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
 
-        // Material Design Bootstrap súgó: https://mdbootstrap.com/
-        // Font Awesome:
-        res.write("<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>");
-        // Google Fonts:
-        res.write("<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>");
-        // Bootstrap core CSS:
-        res.write("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>");
-        // Material Design Bootstrap:
-        res.write("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css'>");
+        // Bootstrap 5 core CSS
+        res.write("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>");
 
         res.write("<title>Jedlik Ts Template</title>");
         res.write("</head>");
@@ -35,7 +28,7 @@ export default class Content2 {
         const params = new url.URL(req.url as string, `http://${req.headers.host}/`).searchParams;
 
         // Kezd a kódolást innen -->
-        res.write("Egyszerű Hello World!\n");
+        res.write("<h1>Egyszerű Hello World!</h1>");
 
         // Tetszőleges html teg-ek és attribútumok beépítése:
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
@@ -49,26 +42,13 @@ export default class Content2 {
         res.write(`Kérem a korod: <input type='number' name='kor' value=${korod} style='max-width:100px;' onChange='this.form.submit();'>\n`);
         res.write(`Te ${korod} éves vagy!\n`);
 
-        res.write("Material Design for Bootstrap input demo:");
-        let email = params.get("email");
-        if (!email) email = "";
-        res.write("<div class='md-form  md-outline'><i class='fas fa-envelope prefix'></i>");
-        res.write(`<input type='text' name='email' id='email'  style='max-width:300px;' class='form-control' value='${email}' onChange='this.form.submit();'>`);
-        res.write("<label for='email'>E-mail cím</label></div>");
-        res.write(`Te e-mail címed: ${email}\n`);
+        res.write("<button type='button' class='btn btn-primary'>Primary</button>");
 
         // <---- Fejezd be a kódolást
 
         res.write("</pre></form>");
 
-        // JQuery:
-        res.write("<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>");
-        // Bootstrap tooltips:
-        res.write("<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js'></script>");
-        // Bootstrap core JavaScript:
-        res.write("<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>");
-        // MDB core JavaScript:
-        res.write("<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>");
+        res.write("<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'></script>");
 
         res.write("</body></html>");
         res.end();
