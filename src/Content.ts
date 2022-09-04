@@ -26,7 +26,7 @@ export default class Content {
 
         // Kezd a kódolást innen -->
 
-        res.write("Egyszerű Hello World! (2022/2023)\n");
+        res.write("Egyszerű Hello World! (22/23)\n");
 
         // Tetszőleges html teg-ek és attribútumok beépítése:
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
