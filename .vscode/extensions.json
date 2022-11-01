@@ -5,8 +5,8 @@
         "esbenp.prettier-vscode",
         "tomoki1207.pdf",
         "formulahendry.auto-rename-tag",
-        "donjayamanne.githistory",
-        "github.vscode-pull-request-github",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "formulahendry.auto-close-tag",
+        "christian-kohler.path-intellisense"
     ]
 }
