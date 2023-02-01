@@ -19,7 +19,7 @@ export default class Content2 {
         res.write("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
 
         // Bootstrap 5 core CSS
-        res.write("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>");
+        res.write("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'>");
 
         res.write("<title>Jedlik Ts Template</title>");
         res.write("</head>");
@@ -48,7 +48,7 @@ export default class Content2 {
 
         res.write("</pre></form>");
 
-        res.write("<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'></script>");
+        res.write("<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js'></script>");
 
         res.write("</body></html>");
         res.end();

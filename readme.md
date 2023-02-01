@@ -1,4 +1,4 @@
-#  VS Code + TypeScript + Node.js + Jest + GitHub + Heroku
+#  VS Code + TypeScript + Node.js + Jest + GitHub + Cyclic
 
 ## Cyclic teszt:
 https://jedlik-ts-template.cyclic.app/
@@ -10,17 +10,7 @@ https://jedlik-ts-template.cyclic.app/
     https://git-for-windows.github.io/
 3.  Visual Studio Code - User Installer (továbbiakban VSCode) telepítése<br>
     https://code.visualstudio.com/Download
-4.  VSCode futtatása, Visual Studio Extensions (bővítmények) telepítése: Ctrl-Shift-X<br>
-    Bővítmények keresése, telepítés:<br>
-     - "Add jsdoc comments" (opcionális, jsdoc rendszerű dokumentáció készítéséhez)
-     - "ESLint" (linter - fontos, kell)
-     - "GitHub Pull Requests and Issues" (Git pull request-ek és feladatok)
-     - "GitLens" (extra Git funkciók, opcionális a telepítése)
-     - "npm Intellisense" (opcionális, ajánlott)
-     - "Prettier" (kód formázó - fontos, kell)
-     - "Spell Right" (helyesírás ellenőrzés) (opcionális, ajánlott)
-     - "vscode-pdf" (pdf olvasó, opcionális)
-     - további bővítmények telepítése igény szerint
+4.  VSCode futtatása, felajánlott (@recommended) Visual Studio Extensions (bővítmények) telepítése<br>
 5. Billentyűkombinációk beállítása:<br>
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S<br>
     Parancs keresése: gépeléssel<br>
@@ -138,11 +128,3 @@ https://jedlik-ts-template.cyclic.app/
    Preferences: "Open User Settings" a felhasználónál tárolt beállításokhoz<br>
    Konfig fájl workspace: projekt/.vscode/settings.json<br>
    Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json
-
-## I. LiveReload - Automatikus böngésző frissítés
-1. Telepítsed a LiveReload asztali alakalmazást: http://livereload.com/
-2. Telepítsed a LiveReload Chrome bővítményt:<br>
-    https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
-3. Beállítások:<br>
-    https://www.logicbig.com/tutorials/misc/typescript/project-auto-refresh-with-live-reload.html
-

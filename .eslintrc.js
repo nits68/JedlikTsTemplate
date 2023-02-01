@@ -24,7 +24,7 @@ module.exports = {
         // "no-return-assign": "off",
         // "unicode-bom": ["error", "never"],
         // "arrow-parens": ["error", "as-needed"],
-        // "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
     },
     overrides: [
         {
