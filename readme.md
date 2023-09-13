@@ -1,4 +1,4 @@
-#  VS Code + TypeScript + Node.js + Jest + GitHub + Cyclic
+#  VS Code + TypeScript + Node.js + Jest + GitHub
 
 ## Cyclic teszt:
 https://jedlik.cyclic.app/
