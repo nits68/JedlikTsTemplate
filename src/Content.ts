@@ -25,7 +25,7 @@ export default function content(req: http.IncomingMessage, res: http.ServerRespo
 
     // Kezd a kódolást innen -->
 
-    res.write("Egyszerű Hello World! (2022/2023)\n");
+    res.write("Egyszerű Hello World! (2023/2024)\n");
 
     // Tetszőleges html teg-ek és attribútumok beépítése:
     res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
