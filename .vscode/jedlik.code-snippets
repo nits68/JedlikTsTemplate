@@ -25,7 +25,7 @@
     },
     "Map has": {
         "prefix": "íMap - has",
-        "description": "Kulcs vizsgálata",
+        "description": "Kulcs létezésének vizsgálata",
         "scope": "typescript",
         "body": ["if (myMap.has(${1:\"kulcs\"})) {\n}"]
     },
@@ -34,6 +34,12 @@
         "description": "Kulcs-érték pár hozzáadása, módosítása",
         "scope": "typescript",
         "body": ["myMap.set(\"(új/meglévő kulcs\", érték);"]
+    },
+     "Map get": {
+        "prefix": "íMap - sgetet",
+        "description": "Kulcshoz tartozó érték lekérdezése",
+        "scope": "typescript",
+        "body": ["myMap.get(${1:\"kulcs\"});"]
     },
 
     // Place your jedlik-frontend-starter workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
