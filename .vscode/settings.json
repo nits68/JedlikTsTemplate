@@ -15,7 +15,7 @@
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
