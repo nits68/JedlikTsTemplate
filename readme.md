@@ -91,8 +91,8 @@ https://jedlik.cyclic.app/
    pl.: GitHub asztali alkalmazással vagy github.com-on<br>
    (JedlikTsTemplate a repository neve a példában)
 3. Git konfigurálása CMD vagy "Git CMD" ablakból:
-   - git config --global user.name nitslaszlo
-   - git config --global user.email nitslaszlo@gmail.com
+   - git config --global user.name nits68
+   - git config --global user.email nits.laszlo@jedlik.eu
    - git config --global credential.helper wincred
 4. Visual Studio Code indítása - project betöltése
 5. Ha van klónozott projektben .Git (rejtett!!!) mappa, akkor törölni kell
