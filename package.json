@@ -6,7 +6,7 @@
     "repository": {
         "private": false,
         "type": "git",
-        "url": "https://github.com/nitslaszlo/JedlikTsTemplate"
+        "url": "https://github.com/nits68/JedlikTsTemplate"
     },
     "scripts": {
         "start": "node ./dist/App.js",
