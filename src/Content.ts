@@ -1,6 +1,6 @@
-﻿import fs from "fs"; //  https://nodejs.org/docs/latest-v14.x/api/fs.html
-import http from "http"; //  https://nodejs.org/docs/latest-v14.x/api/http.html
-import url from "url"; //  https://nodejs.org/docs/latest-v14.x/api/url.html
+﻿import fs from "fs"; // https://nodejs.org/docs/latest-v14.x/api/fs.html
+import http from "http"; // https://nodejs.org/docs/latest-v14.x/api/http.html
+import url from "url"; // https://nodejs.org/docs/latest-v14.x/api/url.html
 
 export default function content(req: http.IncomingMessage, res: http.ServerResponse): void {
     // favicon.ico kérés kiszolgálása:
