@@ -1,4 +1,4 @@
-#  VS Code + TypeScript + Node.js + Jest + GitHub 123
+#  VS Code + TypeScript + Node.js + Jest + GitHub
 
 ## A.  Fejlesztői környezet telepítése, beállítása
 1.  Node.js letöltése, telepítése (Aktuális LTS verzió javasolt!)<br>
