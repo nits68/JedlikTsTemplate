@@ -1,8 +1,5 @@
 #  VS Code + TypeScript + Node.js + Jest + GitHub
 
-## Cyclic teszt:
-https://jedlik.cyclic.app/
-
 ## A.  Fejlesztői környezet telepítése, beállítása
 1.  Node.js letöltése, telepítése (Aktuális LTS verzió javasolt!)<br>
     https://nodejs.org/en/download/
