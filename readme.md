@@ -21,13 +21,13 @@
 7. Opcionális: VSCode beállítása: lsd. az oldal végén
 
 ## B.  Projekt előkészítése (inicializálása)
-1.  https://github.com/nitslaszlo/JedlikTsTemplate.git<br>
+1.  https://github.com/nits68/JedlikTsTemplate.git<br>
     - Ha nem akarsz klónozni:<br>
       JedlikTsTemplate-master.zip letöltése, kicsomagolása a projekt szülőmappájába<br>
       Vagy:<br>
     - Repo klónozása<br>
       Parancssor (cmd.exe)-> cd a projekt szülőmappája<br>
-      "git clone https://github.com/nitslaszlo/JedlikTsTemplate.git"<br>
+      "git clone https://github.com/nits68/JedlikTsTemplate.git"<br>
     - Ha nem vagy társ-fejlesztő (contributor), akkor töröljed a .git rejtett mappát!
 2.  Parancssorból (cmd.exe) belépés a JedlikTsTemplate mappába a "cd JedlikTsTemplate" paranccsal
 3.  Node.js lokális modul(ok) telepítése az "npm i" parancs futtatásával<br>
