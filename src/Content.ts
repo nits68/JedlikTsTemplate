@@ -20,12 +20,11 @@ export default function content(req: http.IncomingMessage, res: http.ServerRespo
     res.write("<title>Jedlik Ts Template</title>");
     res.write("</head>");
     res.write("<body><form><pre>");
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const params = new url.URL(req.url as string, `http://${req.headers.host}/`).searchParams;
 
     // Kezd a kódolást innen -->
 
-    res.write("Egyszerű Hello World! (2023/2024)\n");
+    res.write("Egyszerű Hello World! (2024/2025)\n");
 
     // Tetszőleges html teg-ek és attribútumok beépítése:
     res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
