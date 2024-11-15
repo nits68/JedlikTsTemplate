@@ -92,7 +92,7 @@
    - git config --global user.email nits.laszlo@jedlik.eu
    - git config --global credential.helper wincred
   ```
-  Using Git Credential Helper
+  Using Git Credential Helper:
   1. Clear the Entire Credential Cache: git credential-cache exit
   2. Remove Specific Credentials:  C:\Users\<YourUsername>\.git-credentials
   3.1 Check the Git Configuration File: C:\Users\<YourUsername>\.gitconfig
