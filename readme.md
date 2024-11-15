@@ -91,6 +91,19 @@
    - git config --global user.name nits68
    - git config --global user.email nits.laszlo@jedlik.eu
    - git config --global credential.helper wincred
+  ```
+  Using Git Credential Helper
+  1. Clear the Entire Credential Cache: git credential-cache exit
+  2. Remove Specific Credentials:  C:\Users\<YourUsername>\.git-credentials
+  3.1 Check the Git Configuration File: C:\Users\<YourUsername>\.gitconfig
+  3.2 Look for sections that contain credential information.
+        [credential]
+            helper = wincred
+        [user]
+            name = yourusername
+            email = youremail@example.com
+  ```
+
 4. Visual Studio Code indítása - project betöltése
 5. Ha van klónozott projektben .Git (rejtett!!!) mappa, akkor törölni kell
 6. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G<br>
